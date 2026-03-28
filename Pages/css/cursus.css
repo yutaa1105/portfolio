@@ -1,0 +1,178 @@
+/*
+PAGE CURSUS.HTML
+*/
+
+.timeline {
+	position: relative;
+	width: min(1100px, 92%);
+	margin: 2rem auto 3rem;
+	padding: 1rem 0;
+}
+
+.timeline::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	width: 4px;
+	transform: translateX(-50%);
+	background: linear-gradient(180deg, var(--blue-800), var(--blue-700));
+	border-radius: 2px;
+}
+
+.etape {
+	position: relative;
+	width: 50%;
+	padding: 0 2.2rem;
+	box-sizing: border-box;
+	margin: 1.4rem 0;
+}
+
+.etape.gauche {
+	left: 0;
+}
+
+.etape.droite {
+	left: 50%;
+}
+
+.etape::before {
+	content: "";
+	position: absolute;
+	top: 30px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: var(--surface-1);
+	border: 3px solid var(--blue-800);
+	z-index: 2;
+}
+
+.etape.gauche::before {
+	right: -12px;
+}
+
+.etape.droite::before {
+	left: -12px;
+}
+
+.carte-etape {
+	background: var(--surface-1);
+	border: 1.5px solid var(--surface-border-strong);
+	border-radius: 14px;
+	padding: 1.2rem 1.25rem;
+	text-align: left;
+	box-shadow: 0 6px 18px rgba(13, 31, 45, 0.09);
+	transition: all 0.3s ease;
+}
+
+.carte-etape:hover {
+	box-shadow: 0 8px 24px rgba(13, 31, 45, 0.12);
+	border-color: var(--accent-500);
+}
+
+.carte-etape h2 {
+	margin: 0 0 0.6rem;
+	text-align: left;
+	color: var(--title-color);
+}
+
+.carte-etape h3 {
+	margin: 1rem 0 0.4rem;
+	text-align: left;
+	color: var(--link-color);
+	font-size: 1.05rem;
+}
+
+.carte-etape p {
+	margin: 0.35rem 0;
+	color: var(--text-700);
+	font-size: 1rem;
+}
+
+.carte-etape ul {
+	margin: 0.55rem 0 0;
+	padding-left: 1.2rem;
+}
+
+.carte-etape li {
+	margin-bottom: 0.35rem;
+	color: var(--text-700);
+}
+
+.etape-image {
+	width: 100%;
+	max-height: 220px;
+	object-fit: cover;
+	border-radius: 10px;
+	border: 1px solid rgba(201, 169, 97, 0.45);
+	margin: 0.85rem 0 0.4rem;
+}
+
+.site {
+	color: #7db08d;
+}
+
+.site:visited {
+	color: #97c0a4;
+}
+
+.site:hover {
+	color: #b6dbc1;
+}
+
+[data-theme="dark"] .carte-etape {
+	background: #1a2a38;
+	border-color: #4c657c;
+	box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+}
+
+[data-theme="dark"] .timeline::before {
+	background: linear-gradient(180deg, #f0d69c, #b98d33);
+}
+
+[data-theme="dark"] .etape::before {
+	background: #1a2a38;
+	border-color: #f0d69c;
+}
+
+@media (max-width: 900px) {
+	.timeline::before {
+		left: 20px;
+		transform: none;
+	}
+
+	.etape,
+	.etape.gauche,
+	.etape.droite {
+		width: 100%;
+		left: 0;
+		padding-left: 3.2rem;
+		padding-right: 0.8rem;
+	}
+
+	.etape::before,
+	.etape.gauche::before,
+	.etape.droite::before {
+		left: 12px;
+		right: auto;
+	}
+}
+
+@media (max-width: 600px) {
+	.carte-etape {
+		padding: 1rem;
+	}
+
+	.etape,
+	.etape.gauche,
+	.etape.droite {
+		padding-left: 2.6rem;
+		padding-right: 0;
+	}
+
+	.etape-image {
+		max-height: 180px;
+	}
+}

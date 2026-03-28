@@ -1,0 +1,151 @@
+/* Section centres d'intérêt */
+.a-propos {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.interet-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.interet-texte {
+    flex: 1 1 250px;
+    min-width: 200px;
+    text-align: justify;
+}
+
+.interet-texte p {
+    line-height: 1.8;
+    color: var(--text-700);
+    margin-bottom: 0.8rem;
+}
+
+[data-theme="dark"] .photos-compactes .interet-img {
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+}
+
+.interet-texte h3 {
+    margin-top: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--title-color);
+    font-size: 1.25rem;
+    text-align: left;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.2rem 0 0;
+}
+
+.photos-compactes {
+    display: grid;
+    width: 100%;
+    gap: 0.75rem;
+    align-items: stretch;
+    justify-content: stretch;
+    overflow: hidden;
+    padding-bottom: 0;
+}
+
+.photos-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.photos-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.interet-img {
+    width: 220px;
+    height: auto;
+    object-fit: initial;
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    flex: 0 0 auto;
+}
+
+.photos-compactes .interet-img {
+    width: 100%;
+    height: 135px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 6px 16px var(--surface-shadow);
+}
+
+.interet-img:hover {
+    transform: scale(1.04) translateY(-2px);
+    box-shadow: 0 10px 24px var(--surface-shadow-strong);
+}
+
+@media (max-width: 900px) {
+    .photos {
+        gap: 0.8rem;
+    }
+
+    .interet-img {
+        width: 180px;
+    }
+
+    .photos-compactes .interet-img {
+        height: 115px;
+    }
+
+    .photos-compactes {
+        overflow-x: auto;
+        grid-auto-flow: column;
+        grid-auto-columns: minmax(120px, 1fr);
+    }
+
+    .photos-5,
+    .photos-6 {
+        grid-template-columns: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .photos {
+        gap: 0.6rem;
+    }
+
+    .interet-img {
+        width: 150px;
+    }
+
+    .photos-compactes .interet-img {
+        height: 98px;
+    }
+
+    .photos-compactes {
+        grid-auto-columns: minmax(105px, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .photos {
+        gap: 0.5rem;
+    }
+
+    .interet-img {
+        width: 130px;
+    }
+
+    .photos-compactes .interet-img {
+        height: 84px;
+    }
+
+    .photos-compactes {
+        grid-auto-columns: minmax(90px, 1fr);
+    }
+}

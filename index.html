@@ -1,1 +1,77 @@
-
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Site Web Vitrine</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="Pages/css/index.css">
+        <link type="text/css" rel="stylesheet" href="Pages/css/style.css">
+    </head>
+    <body data-page="home">
+        <header>
+            <nav class="menu">
+                <a class="active" aria-current="page" href="index.html">Accueil</a>
+                <a href="Pages/competences.html">Compétences</a>
+                <a href="Pages/cursus.html">Cursus</a>
+                <a href="Pages/projets.html">Projets</a>
+                <a href="Pages/centresInteret.html">Centres d'intérêt</a>
+                <a href="Pages/CV.pdf" download="Candice-Carton-CV.pdf" target="_blank" rel="noopener noreferrer">Télécharger mon CV</a>
+            </nav>
+        </header>
+        <main>
+            <h1 class="titre">À propos de moi</h1>
+            <section class="a-propos">
+                <div class="apropos-flex">
+                    <div class="contenu-apropos">
+                        <p class="blocTexte">
+                            Bonjour, je m'appelle Candice Carton, j'ai 19 ans et je suis actuellement étudiante en deuxième année de BUT Informatique à l'IUT de Clermont-Ferrand.
+                            Passionnée par les technologies depuis mon enfance, mes études me permettent de satisfaire ma curiosité et d'évoluer sur des projets concrets menés dans le cadre de mes SAE et de mes travaux personnels.
+                            J'aime particulièrement le développement web, la programmation et l'exploration de nouveaux outils numériques.
+                        </p>
+                        <p class="blocTexte bloc-secondaire">
+                            En dehors de l'informatique, je suis très attirée par la culture japonaise, les mangas, les animés et les jeux vidéo.
+                            Cette diversité d'intérêts nourrit ma créativité et mon envie d'apprendre.
+                        </p>
+                        <div class="actions-accueil">
+                            <a href="Pages/competences.html">Découvrir mes compétences</a>
+                            <a href="Pages/projets.html">Voir mes projets</a>
+                        </div>
+                    </div>
+                    <div class="carrousel">
+                        <button class="carrousel-btn" id="prev">&#10094;</button>
+                        <div class="carrousel-panel">
+                            <div class="carrousel-images">
+                                <img src="photo/photoProfil.png" alt="Portrait" class="carrousel-img active" data-label="Candice - Étudiante en BUT Info">
+                                <img src="photo/manga2.jpeg" alt="Lecture" class="carrousel-img" data-label="Lecture manga et manhwa">
+                                <img src="photo/films.jpg" alt="Anime" class="carrousel-img" data-label="Animés et cinéma">
+                                <img src="photo/pokemon.jpg" alt="Jeux vidéo" class="carrousel-img" data-label="Jeux vidéo et stratégie">
+                                <img src="photo/ramen.jpg" alt="Cuisine japonaise" class="carrousel-img" data-label="Culture et cuisine japonaise">
+                            </div>
+                            <p id="carrousel-caption" class="carrousel-caption">Candice - Étudiante en BUT Info</p>
+                            <div class="carrousel-dots" id="carrousel-dots"></div>
+                        </div>
+                        <button class="carrousel-btn" id="next">&#10095;</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+		<footer>
+			<div class="footer-content">
+                <p>&copy; 2026 Candice Carton. Tous droits réservés.</p>
+				<div class="social-icons">
+					<a href="https://www.linkedin.com/in/candice-carton-317598267" target="_blank" rel="noopener noreferrer">
+                        <img class="reseaux" src="photo/linkedin-blue.svg" alt="LinkedIn">
+					</a>
+					<a href="mailto:candice.carton63@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <img class="reseaux" src="photo/mail-blue.svg" alt="Email">
+					</a>
+				</div>
+			</div>
+		</footer>
+	<script src="Pages/scripts.js" crossorigin="anonymous"></script>
+    </body>
+</html>
