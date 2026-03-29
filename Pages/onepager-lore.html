@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Lore detaille - Yume no Fukushuu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Presentation detaillee du lore de Yume no Fukushuu avec navigation par pages.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/onepager-lore.css">
+</head>
+<body data-page="onepagerLore">
+    <header>
+        <nav class="menu">
+            <a href="../index.html">Accueil</a>
+            <a href="competences.html">Competences</a>
+            <a href="cursus.html">Cursus</a>
+            <a class="active" aria-current="page" href="projets.html">Projets</a>
+            <a href="centresInteret.html">Centres d'interet</a>
+            <a href="CV.pdf" download="Candice-Carton-CV.pdf" target="_blank" rel="noopener noreferrer">Telecharger mon CV</a>
+        </nav>
+    </header>
+
+    <main class="lore-page">
+        <a class="lore-back-link" href="projets.html">Retour aux projets</a>
+        <h1 class="titre">Lore detaille - Yume no Fukushuu</h1>
+
+        <section class="lore-viewer-card" aria-label="Visionneuse du diaporama">
+            <div class="lore-toolbar">
+                <button id="lore-prev" type="button" class="lore-nav-btn" aria-label="Page precedente">&#10094;</button>
+                <p class="lore-page-indicator" id="lore-page-indicator">Page 1 / 10</p>
+                <button id="lore-next" type="button" class="lore-nav-btn" aria-label="Page suivante">&#10095;</button>
+                <a class="lore-open-pdf" href="../photo/Lore.pdf" target="_blank" rel="noopener noreferrer">Ouvrir le PDF complet</a>
+            </div>
+
+            <div class="lore-carousel-wrapper" id="lore-carousel-wrapper" data-total-pages="10">
+                <img id="lore-carousel-image" src="../photo/lore1.png" alt="Page 1 du lore Yume no Fukushuu" loading="lazy">
+            </div>
+
+            <div class="lore-carousel-dots" id="lore-carousel-dots" aria-label="Navigation des pages du lore"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p class="footer-text">&copy; 2026 Candice Carton. Tous droits reserves.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/candice-carton-317598267" target="_blank" rel="noopener noreferrer">
+                    <img class="reseaux" src="../photo/linkedin-blue.svg" alt="LinkedIn">
+                </a>
+                <a href="mailto:candice.carton63@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <img class="reseaux" src="../photo/mail-blue.svg" alt="Email">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="lightbox" style="display:none;">
+        <span id="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" alt="Agrandissement">
+    </div>
+
+    <script src="scripts.js" crossorigin="anonymous"></script>
+</body>
+</html>

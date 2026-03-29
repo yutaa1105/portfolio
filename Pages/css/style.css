@@ -2,7 +2,11 @@
 COMMUN A TOUTES LES PAGES
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
 :root {
+    --font-body: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-display: 'Space Grotesk', 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --blue-900: #0d1f2d;
     --blue-800: #1a3a52;
     --blue-700: #2a5a7f;
@@ -17,6 +21,7 @@ COMMUN A TOUTES LES PAGES
     --page-bg-end: #eff3f8;
     --header-bg: rgba(26, 58, 82, 0.92);
     --header-border: rgba(208, 216, 224, 0.2);
+    --footer-separator: rgba(208, 216, 224, 0.38);
     --surface-1: #f8fafb;
     --surface-2: #f0f4f9;
     --surface-3: #fbfcfe;
@@ -45,34 +50,35 @@ COMMUN A TOUTES LES PAGES
 }
 
 [data-theme="dark"] {
-    --text-900: #eef4fb;
-    --text-700: #b8c7d8;
-    --page-bg-start: #08131d;
-    --page-bg-end: #101d29;
-    --header-bg: rgba(7, 16, 25, 0.92);
-    --header-border: rgba(123, 150, 178, 0.22);
-    --surface-1: #12202d;
-    --surface-2: #172838;
-    --surface-3: #1b2e40;
-    --surface-border: rgba(110, 138, 164, 0.35);
-    --surface-border-strong: #3a5269;
+    --text-900: #f6fbff;
+    --text-700: #e0ebf6;
+    --page-bg-start: #02070e;
+    --page-bg-end: #0a1420;
+    --header-bg: rgba(2, 8, 14, 0.98);
+    --header-border: rgba(171, 199, 226, 0.36);
+    --footer-separator: rgba(186, 212, 236, 0.42);
+    --surface-1: #162738;
+    --surface-2: #1c3145;
+    --surface-3: #23394f;
+    --surface-border: rgba(141, 170, 198, 0.42);
+    --surface-border-strong: #6c87a3;
     --surface-shadow: rgba(0, 0, 0, 0.28);
     --surface-shadow-strong: rgba(0, 0, 0, 0.4);
-    --menu-text: #eef4fb;
-    --menu-bg-start: rgba(39, 76, 107, 0.85);
-    --menu-bg-end: rgba(26, 58, 82, 0.9);
-    --menu-hover-start: rgba(54, 103, 144, 0.92);
-    --menu-hover-end: rgba(34, 68, 98, 0.92);
+    --menu-text: #ffffff;
+    --menu-bg-start: rgba(66, 115, 153, 0.94);
+    --menu-bg-end: rgba(38, 74, 105, 0.94);
+    --menu-hover-start: rgba(104, 155, 198, 0.99);
+    --menu-hover-end: rgba(63, 103, 138, 0.99);
     --menu-active-start: rgba(201, 169, 97, 0.88);
     --menu-active-end: rgba(149, 120, 58, 0.92);
-    --tool-bg: rgba(238, 244, 251, 0.08);
-    --tool-bg-hover: rgba(238, 244, 251, 0.16);
-    --tool-border: rgba(238, 244, 251, 0.14);
+    --tool-bg: rgba(238, 244, 251, 0.14);
+    --tool-bg-hover: rgba(238, 244, 251, 0.24);
+    --tool-border: rgba(238, 244, 251, 0.28);
     --tool-text: #eef4fb;
-    --link-color: #9fc3e6;
-    --link-visited: #8bb0d3;
-    --title-color: #f0d69c;
-    --footer-bg: #09131c;
+    --link-color: #d3e9ff;
+    --link-visited: #bfdbf5;
+    --title-color: #ffe4ad;
+    --footer-bg: #040b14;
     --footer-text: #eef4fb;
     --lightbox-bg: rgba(2, 5, 8, 0.86);
     --lightbox-image-bg: #13212d;
@@ -100,14 +106,89 @@ COMMUN A TOUTES LES PAGES
     }
 }
 
+.reveal-item {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.55s ease, transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+    transition-delay: var(--reveal-delay, 0ms);
+}
+
+.reveal-item.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.custom-cursor-dot,
+.custom-cursor-ring {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 100001;
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.15s ease;
+}
+
+.custom-cursor-dot,
+.custom-cursor-ring {
+    display: none !important;
+}
+
+.custom-cursor-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: rgba(31, 47, 63, 0.88);
+    box-shadow: none;
+}
+
+.custom-cursor-ring {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid rgba(31, 47, 63, 0.45);
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(1px);
+}
+
+[data-theme="dark"] .custom-cursor-dot {
+    background: rgba(233, 242, 250, 0.92);
+}
+
+[data-theme="dark"] .custom-cursor-ring {
+    border-color: rgba(233, 242, 250, 0.52);
+    background: rgba(233, 242, 250, 0.04);
+}
+
+html[data-custom-cursor="on"] body,
+html[data-custom-cursor="on"] a,
+html[data-custom-cursor="on"] button,
+html[data-custom-cursor="on"] .tool-btn,
+html[data-custom-cursor="on"] .dot,
+html[data-custom-cursor="on"] .project-more-link,
+html[data-custom-cursor="on"] img,
+html[data-custom-cursor="on"] [role="button"] {
+    cursor: none !important;
+}
+
 body {
     margin: 0;
     background: linear-gradient(180deg, var(--page-bg-start) 0%, var(--page-bg-end) 100%);
     color: var(--text-900);
-    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: var(--font-body);
     line-height: 1.6;
     font-weight: 400;
     transition: background 0.35s ease, color 0.35s ease;
+}
+
+a,
+button,
+.tool-btn,
+.dot,
+.project-more-link,
+.project-carousel-btn,
+.lore-nav-btn,
+[role="button"] {
 }
 
 header {
@@ -137,14 +218,16 @@ header {
     align-items: center;
     min-height: 56px;
     padding: 0.4rem 0.75rem;
-    border-radius: 8px;
+    border-radius: 0;
     color: var(--menu-text);
     text-decoration: none;
     text-align: center;
+    font-family: var(--font-display);
     font-weight: 600;
     font-size: 0.96rem;
     letter-spacing: 0.3px;
     background: transparent;
+    border: none;
     transition: color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -194,6 +277,23 @@ header {
     color: #f0d69c;
 }
 
+[data-theme="dark"] .menu a {
+    opacity: 1;
+    text-shadow: none;
+    background: transparent;
+    border: none;
+}
+
+[data-theme="dark"] .menu a.active,
+[data-theme="dark"] .menu a[aria-current="page"] {
+    color: #fff8e8;
+    background: transparent;
+}
+
+[data-theme="dark"] .menu a:hover {
+    background: transparent;
+}
+
 .barreMenu {
     display: none;
 }
@@ -224,6 +324,7 @@ header {
     background: var(--tool-bg);
     color: var(--tool-text);
     font: inherit;
+    font-family: var(--font-display);
     font-size: 0.92rem;
     font-weight: 600;
     cursor: pointer;
@@ -247,6 +348,7 @@ header {
 }
 
 .titre {
+    font-family: var(--font-display);
     display: inline-block;
     color: var(--title-color);
     padding-bottom: 1.2em;
@@ -297,6 +399,7 @@ header {
 
 
 h1 {
+    font-family: var(--font-display);
     text-align: center;
     color: var(--text-900);
     margin-top: 60px;
@@ -304,6 +407,7 @@ h1 {
 }
 
 h2 {
+    font-family: var(--font-display);
     text-align: center;
     color: var(--title-color);
     margin-top: 0;
@@ -328,6 +432,7 @@ h2::after {
 }
 
 h3 {
+    font-family: var(--font-display);
     text-align: center;
     color: var(--text-700);
     margin-top: 30px;
@@ -423,6 +528,7 @@ footer {
     margin-top: 20px;
     width: 100%;
     background: var(--footer-bg);
+    border-top: 1px solid var(--footer-separator);
     box-shadow: 0 10px 30px rgba(13, 31, 45, 0.25);
     color: var(--footer-text);
     padding: 15px 0;
@@ -634,5 +740,18 @@ footer {
 
     .blocTexte {
         padding: 1rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal-item {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .custom-cursor-dot,
+    .custom-cursor-ring {
+        display: none !important;
     }
 }

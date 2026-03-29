@@ -45,35 +45,35 @@ const commonContent = {
 const pageContent = {
     home: {
         fr: {
-            title: 'Site Web Vitrine',
-            heading: 'À propos de moi',
+            title: 'Portfolio - Candice Carton',
+            heading: 'Étudiante en BUT Informatique',
             intro: [
-                "Bonjour, je m'appelle Candice Carton, j'ai 19 ans et je suis actuellement étudiante en deuxième année de BUT Informatique à l'IUT de Clermont-Ferrand. Passionnée par les technologies depuis mon enfance, mes études me permettent de satisfaire ma curiosité et d'évoluer sur des projets concrets menés dans le cadre de mes SAE et de mes travaux personnels. J'aime particulièrement le développement web, la programmation et l'exploration de nouveaux outils numériques.",
-                "En dehors de l'informatique, je suis très attirée par la culture japonaise, les mangas, les animés et les jeux vidéo. Cette diversité d'intérêts nourrit ma créativité et mon envie d'apprendre."
+                "Je m'appelle Candice Carton et je suis étudiante en deuxième année de BUT Informatique à l'IUT de Clermont-Ferrand. Je développe des projets concrets en développement web, bases de données et conception d'expériences interactives, avec une approche structurée et orientée livrable. Ce portfolio présente mon parcours, mes réalisations et les compétences que je mobilise sur des projets académiques et personnels.",
+                "Je recherche actuellement un stage et une alternance en informatique, avec une préférence pour le développement mobile et web. Je m'intéresse aussi fortement à la culture japonaise, aux animés et au game design. Ces centres d'intérêt nourrissent ma créativité et influencent plusieurs de mes projets."
             ],
-            actions: ['Découvrir mes compétences', 'Voir mes projets'],
+            actions: ['Voir mon profil technique', 'Consulter mes projets', 'Me contacter'],
             carousel: [
-                { alt: 'Portrait', label: 'Candice - Étudiante en BUT Info' },
-                { alt: 'Lecture', label: 'Lecture manga et manhwa' },
-                { alt: 'Anime', label: 'Animés et cinéma' },
-                { alt: 'Jeux vidéo', label: 'Jeux vidéo et stratégie' },
-                { alt: 'Cuisine japonaise', label: 'Culture et cuisine japonaise' }
+                { alt: 'Portrait', label: 'Candice - Développement web et mobile' },
+                { alt: 'IUT Clermont-Ferrand', label: 'BUT Informatique - IUT Clermont-Ferrand' },
+                { alt: 'Projet cartographie', label: 'Projet cartographie forestière - Livradois-Forez' },
+                { alt: 'One-pager de projet', label: 'Conception de jeu vidéo - one-pager' },
+                { alt: 'Semestre au Canada', label: 'Semestre au Canada - UQAC' }
             ]
         },
         en: {
             title: 'Portfolio - Candice Carton',
-            heading: 'About me',
+            heading: 'Computer Science Student',
             intro: [
-                "Hello, my name is Candice Carton. I am 19 years old and currently in my second year of a Bachelor's degree in Computer Science at the IUT of Clermont-Ferrand. Passionate about technology since childhood, my studies let me satisfy my curiosity and grow through concrete projects carried out as part of my coursework and personal work. I especially enjoy web development, programming, and exploring new digital tools.",
-                'Outside computer science, I am very interested in Japanese culture, manga, anime, and video games. This mix of interests fuels both my creativity and my desire to keep learning.'
+                "My name is Candice Carton, and I am currently in my second year of a Computer Science degree at the IUT of Clermont-Ferrand. I work on concrete projects in web development, databases, and interactive experience design, with a structured and delivery-focused approach. This portfolio presents my background, selected projects, and the skills I apply in both academic and personal work.",
+                'I am currently looking for both an internship and a work-study position in computer science, with a strong interest in mobile and web development. I am also strongly interested in Japanese culture, anime, and game design. These interests fuel my creativity and influence several of my projects.'
             ],
-            actions: ['Discover my skills', 'See my projects'],
+            actions: ['View my technical profile', 'Browse my projects', 'Contact me'],
             carousel: [
-                { alt: 'Portrait', label: 'Candice - Computer Science student' },
-                { alt: 'Reading', label: 'Manga and manhwa reading' },
-                { alt: 'Anime', label: 'Anime and cinema' },
-                { alt: 'Video games', label: 'Video games and strategy' },
-                { alt: 'Japanese food', label: 'Japanese culture and cuisine' }
+                { alt: 'Portrait', label: 'Candice - Web and mobile development' },
+                { alt: 'IUT Clermont-Ferrand', label: 'Computer Science degree - IUT Clermont-Ferrand' },
+                { alt: 'Forest mapping project', label: 'Forest mapping project - Livradois-Forez' },
+                { alt: 'Game one-pager', label: 'Video game design - one-pager' },
+                { alt: 'Semester in Canada', label: 'Semester in Canada - UQAC' }
             ]
         }
     },
@@ -93,7 +93,7 @@ const pageContent = {
             ],
             secondaryCards: {
                 languageTitle: 'Langue',
-                languageLevel: 'Anglais - 80%',
+                languageLevel: 'Anglais - Bon niveau',
                 languageText: "Bonne compréhension écrite et orale, aisance à l'écrit, vocabulaire technique informatique.",
                 softSkillsTitle: 'Compétences transversales',
                 softSkills: [
@@ -121,7 +121,7 @@ const pageContent = {
             ],
             secondaryCards: {
                 languageTitle: 'Language',
-                languageLevel: 'English - 80%',
+                languageLevel: 'English - Good working level',
                 languageText: 'Strong written and spoken comprehension, ease in writing, and technical vocabulary in computing.',
                 softSkillsTitle: 'Soft skills',
                 softSkills: [
@@ -141,15 +141,27 @@ const pageContent = {
             heading: 'Mon cursus scolaire',
             cards: [
                 {
-                    title: 'Collège',
-                    paragraphs: ['Collège Jean Rostand, Les Martres-de-Veyre.', 'Obtention du brevet avec <em>mention très bien</em>.'],
-                    sectionTitle: 'Stage de troisième - Overscan',
-                    items: ['Packaging numérique de boîtes de médicaments.', 'Utilisation de Photoshop et création de visuels publicitaires.'],
-                    imageAlt: 'Collège Jean Rostand'
+                    title: 'Semestre au Canada',
+                    date: 'Période : janv. 2026 - avr. 2026',
+                    paragraphs: ['Université du Québec à Chicoutimi (UQAC)', "Expérience internationale dans le cadre du BUT Informatique.", "Objectif : approfondir les compétences techniques et renforcer l'anglais dans un environnement académique différent."],
+                    items: [
+                        "Ouverture culturelle et adaptation à un nouveau cadre d'études.",
+                        "Développement de l'autonomie et de la communication."
+                    ]
+                },
+                {
+                    title: 'BUT Informatique',
+                    date: 'Période : sept. 2024 - juin 2026',
+                    paragraphs: ['IUT de Clermont-Ferrand', '2e année de BUT Informatique.', 'Approfondissement des compétences en algorithmique, développement, bases de données, gestion de projet et travail en équipe.'],
+                    items: [
+                        'Projets de SAE plus complets, menés sur des volumes horaires plus importants.',
+                        'Renforcement des bases en Python, C, SQL et développement web, avec une approche plus professionnalisante.'
+                    ]
                 },
                 {
                     title: 'Lycée',
-                    paragraphs: ["Lycée Jeanne d'Arc, Clermont-Ferrand.", 'Obtention du bac avec <em>mention bien</em>.'],
+                    date: 'Période : sept. 2021 - juin 2024',
+                    paragraphs: ["Lycée Jeanne d'Arc, Clermont-Ferrand", 'Obtention du bac avec <em>mention bien</em>.'],
                     sectionTitle: 'Expériences',
                     items: [
                         'Stage chez <a class="site" href="https://home.diakse.com/fr_fr/" target="_blank" rel="noopener noreferrer"><strong>Diakse</strong></a> : CV en HTML/CSS et création de page avec Elementor.',
@@ -158,20 +170,12 @@ const pageContent = {
                     imageAlt: "Lycée Jeanne d'Arc"
                 },
                 {
-                    title: 'BUT Informatique',
-                    paragraphs: ['IUT de Clermont-Ferrand - 2e année.', 'Approfondissement des compétences en algorithmique, développement, bases de données, gestion de projet et travail en équipe.'],
-                    items: [
-                        'Projets de SAE plus complets, menés sur des volumes horaires plus importants.',
-                        'Renforcement des bases en Python, C, SQL et développement web, avec une approche plus professionnalisante.'
-                    ]
-                },
-                {
-                    title: 'Semestre au Canada',
-                    paragraphs: ["Expérience internationale dans le cadre du BUT Informatique.", "Objectif : approfondir les compétences techniques et renforcer l'anglais dans un environnement académique différent."],
-                    items: [
-                        "Ouverture culturelle et adaptation à un nouveau cadre d'études.",
-                        "Développement de l'autonomie et de la communication."
-                    ]
+                    title: 'Collège',
+                    date: 'Période : sept. 2018 - juin 2021',
+                    paragraphs: ['Collège Jean Rostand, Les Martres-de-Veyre', 'Obtention du brevet avec <em>mention très bien</em>.'],
+                    sectionTitle: 'Stage de troisième - Overscan',
+                    items: ['Packaging numérique de boîtes de médicaments.', 'Utilisation de Photoshop et création de visuels publicitaires.'],
+                    imageAlt: 'Collège Jean Rostand'
                 }
             ]
         },
@@ -180,15 +184,27 @@ const pageContent = {
             heading: 'My education',
             cards: [
                 {
-                    title: 'Middle school',
-                    paragraphs: ['Jean Rostand middle school, Les Martres-de-Veyre.', 'Graduated with highest honors.'],
-                    sectionTitle: 'Work experience in 9th grade - Overscan',
-                    items: ['Digital packaging for medicine boxes.', 'Using Photoshop and creating advertising visuals.'],
-                    imageAlt: 'Jean Rostand middle school'
+                    title: 'Semester in Canada',
+                    date: 'Period: Jan 2026 - Apr 2026',
+                    paragraphs: ['Universite du Quebec a Chicoutimi (UQAC)', 'International experience as part of my Computer Science degree.', 'Goal: strengthen my technical skills and improve my English in a different academic environment.'],
+                    items: [
+                        'Cultural openness and adaptation to a new study environment.',
+                        'Greater independence and communication skills.'
+                    ]
+                },
+                {
+                    title: 'Computer Science degree',
+                    date: 'Period: Sep 2024 - Jun 2026',
+                    paragraphs: ['IUT of Clermont-Ferrand', '2nd year of the Computer Science degree.', 'Deepening my skills in algorithms, development, databases, project management, and teamwork.'],
+                    items: [
+                        'More ambitious coursework projects carried out over longer time spans.',
+                        'Stronger foundations in Python, C, SQL, and web development with a more professional approach.'
+                    ]
                 },
                 {
                     title: 'High school',
-                    paragraphs: ["Jeanne d'Arc high school, Clermont-Ferrand.", 'Graduated with honors.'],
+                    date: 'Period: Sep 2021 - Jun 2024',
+                    paragraphs: ["Jeanne d'Arc high school, Clermont-Ferrand", 'Graduated with honors.'],
                     sectionTitle: 'Experience',
                     items: [
                         'Internship at <a class="site" href="https://home.diakse.com/fr_fr/" target="_blank" rel="noopener noreferrer"><strong>Diakse</strong></a>: HTML/CSS resume and page creation with Elementor.',
@@ -197,20 +213,12 @@ const pageContent = {
                     imageAlt: "Jeanne d'Arc high school"
                 },
                 {
-                    title: 'Computer Science degree',
-                    paragraphs: ['IUT of Clermont-Ferrand - 2nd year.', 'Deepening my skills in algorithms, development, databases, project management, and teamwork.'],
-                    items: [
-                        'More ambitious coursework projects carried out over longer time spans.',
-                        'Stronger foundations in Python, C, SQL, and web development with a more professional approach.'
-                    ]
-                },
-                {
-                    title: 'Semester in Canada',
-                    paragraphs: ['International experience as part of my Computer Science degree.', 'Goal: strengthen my technical skills and improve my English in a different academic environment.'],
-                    items: [
-                        'Cultural openness and adaptation to a new study environment.',
-                        'Greater independence and communication skills.'
-                    ]
+                    title: 'Middle school',
+                    date: 'Period: Sep 2018 - Jun 2021',
+                    paragraphs: ['Jean Rostand middle school, Les Martres-de-Veyre', 'Graduated with highest honors.'],
+                    sectionTitle: 'Work experience in 9th grade - Overscan',
+                    items: ['Digital packaging for medicine boxes.', 'Using Photoshop and creating advertising visuals.'],
+                    imageAlt: 'Jean Rostand middle school'
                 }
             ]
         }
@@ -284,37 +292,37 @@ const pageContent = {
             intro: 'Un aperçu de mes réalisations académiques et personnelles, avec des projets orientés base de données, game design et expériences immersives.',
             cards: [
                 {
-                    title: 'SAE 1.04 - Base de données pour une entreprise fictive',
+                    title: 'Cartographie forestière du Livradois-Forez',
                     paragraphs: [
-                        "J'ai eu l'occasion de participer à la réalisation de la SAE 1.04 en groupe de 4, qui consistait à implémenter une base de données pour une entreprise fictive de location de jeux gonflables.<br>J'ai pu apporter mes compétences en SQL en travaillant à l'élaboration du MCD ainsi qu'à la programmation de la base de données, en créant les différentes tables en SQL tout en veillant à leur bon fonctionnement.<br>Mais j'ai aussi mis à l'œuvre mes compétences en rédaction en réalisant une partie du rapport économique ainsi que le texte narratif de la vidéo de présentation du projet.<br>Enfin, la communication a joué un rôle majeur dans le bon déroulement de cette SAE ainsi que dans la qualité de mon travail."
+                        "Ce projet vise à fournir une cartographie des arbres pour l'association du Livradois-Forez. L'application permet de consulter les informations liées aux essences et aux maladies, puis d'ajouter, modifier ou supprimer des entrées selon les besoins du suivi terrain.<br>Le travail d'équipe a abouti à plusieurs livrables complémentaires : une application mobile en Kotlin, une application web en PHP, une application d'administration en Blazor et une API pour relier l'ensemble.<br>J'ai principalement travaillé sur le système de connexion des comptes côté PHP ainsi que sur la gestion des données relatives aux arbres en EF. Ma contribution a été interrompue en cours de projet en raison de mon départ pour le semestre au Canada.",
+                        'Technologies utilisées : Blazor, PHP, Entity Framework, ASP.NET, Kotlin.'
                     ],
-                    sectionTitle: 'Illustrations du projet',
-                    note: 'Cliquez sur les images pour les agrandir',
-                    captions: ['Schéma MCD du projet', 'Schéma MLD du projet', "Fiche signalétique de l'entreprise"]
-                },
-                {
-                    title: 'SAE de 2e année',
-                    paragraphs: [
-                        "Zone reservee pour presenter une SAE de 2e annee. Tu pourras y ajouter un resume court du projet, ton role dans l'equipe, les outils utilises, les livrables produits et quelques illustrations.",
-                        'A completer avec le titre exact de la SAE, le contexte, les objectifs et 2 a 3 visuels.'
-                    ],
-                    captions: ['Visuel 1 a venir', 'Visuel 2 a venir', 'Visuel 3 a venir']
+                    captions: ["Aperçu de l'interface de cartographie"]
                 },
                 {
                     title: 'Projet VR',
                     paragraphs: [
-                        "Ce projet de realite virtuelle prend la forme d'un jeu d'ambiance inspire de la nyctophobie, c'est-a-dire la peur du noir. Le joueur incarne une personne qui rentre chez elle apres une longue journee de travail et souhaite simplement s'installer pour regarder un film. Pourtant, quelques secondes apres avoir allume la lumiere, le courant se coupe brutalement et la maison bascule dans l'obscurite.<br>Le but est alors d'explorer la maison muni d'une lampe torche pour retrouver la cle qui permet d'ouvrir la porte de la cave, puis d'acceder au panneau electrique afin de retablir le courant. Le projet repose donc sur une progression simple, mais efficace, qui joue sur la tension, l'exploration et l'immersion propres a la VR.<br>Cette idee me permet de travailler a la fois la mise en scene, le rythme du parcours joueur et la creation d'une atmosphere immersive autour d'un objectif clair.",
-                        "Tu pourras ensuite ajouter ici les outils utilises, quelques captures d'ecran et un bilan sur les choix de gameplay ou d'ambiance."
+                        "Projet réalisé en groupe de 5 sous Unity3D, autour d'une expérience immersive orientée ambiance et exploration.<br>À ce stade, les décors sont créés et la mise en place des éléments interactifs est en cours d'implémentation dans la scène.<br>Les mécaniques principales déjà définies sont la téléportation, les interactions avec des éléments du décor et des événements déclenchés à des moments clés du parcours joueur.",
+                        'Technologies utilisées : Unity3D.'
                     ],
-                    captions: ['Ambiance / decor', 'Mecanique lampe torche', 'UI ou prototype']
+                    captions: ['Décor et ambiance', 'Téléportation et interactions', 'Événements scénarisés']
+                },
+                {
+                    title: 'Station météo VR connectée à une API',
+                    paragraphs: [
+                        "Projet réalisé sous Unity avec une logique orientée prototype fonctionnel : l'objectif principal était de récupérer des données météo via une API puis de les afficher dans un environnement VR.<br>La partie visuelle était volontairement secondaire. L'information météo devait surtout être lisible et visible dans la scène, notamment sur une télévision placée dans un salon virtuel.<br>Le résultat final permet d'afficher dynamiquement les données météo dans l'univers 3D et de valider l'intégration bout en bout entre Unity et l'API.",
+                        'Technologies utilisées : Unity3D, API météo (requêtes HTTP/JSON).'
+                    ],
+                    captions: ['Vue générale du salon VR', 'Affichage météo sur la télévision', 'Variation des informations météo', 'Prototype final intégré à la scène']
                 },
                 {
                     title: 'Projet de conception de jeu video',
                     paragraphs: [
-                        "Ce projet de conception de jeu video s'appuie sur un one-pager autour de <strong>Yume no Fukushuu</strong>, un jeu d'action-aventure imagine pour PC et consoles, jouable en solo ou en cooperation a deux joueurs. Le concept suit Kenji Mori, un developpeur junior epuise qui s'effondre apres un nomikai force. Dans son reve, des divinites japonaises offensees le designent comme instrument de vengeance contre les superieurs qui ont trahi leur pacte sacre.<br>Le jeu melange exploration, revelation et affrontements dans des royaumes oniriques inspires des obsessions de chaque antagoniste. L'univers met en avant une ambiance fortement marquee par la culture japonaise, avec une dimension fantastique, des transformations divines et une mise en scene volontairement theatrale. L'idee centrale repose sur une vengeance symbolique et sociale, plus que sur un schema heroique classique.<br>Ce travail me permet de developper la construction d'un univers, la definition d'une boucle de gameplay et la capacite a formaliser clairement un concept de jeu a travers un document de presentation synthetique.",
-                        'Base actuelle : one-pager du projet. Tu pourras ensuite ajouter ici les mecaniques principales, les inspirations, des visuels et les choix de game design les plus importants.'
+                        "Projet solo de conception de jeu vidéo autour de <strong>Yume no Fukushuu</strong>, pensé comme une expérience d'action-aventure sur PC et consoles.<br>L'objectif était d'imaginer un concept complet et de le formaliser dans un one-pager clair. Le projet comprend également tout un lore original, plus détaillé que ce qui est présenté dans le document de synthèse.<br>Le concept intègre 5 boss principaux et met l'accent sur la cohérence entre narration, univers et intentions de gameplay.",
+                        'Livrable réalisé : one-pager.'
                     ],
-                    captions: ['One-pager / pitch', 'Direction artistique', 'Gameplay loop']
+                    moreInfo: 'Plus d\'informations',
+                    captions: ['One-pager du projet']
                 }
             ]
         },
@@ -324,39 +332,63 @@ const pageContent = {
             intro: 'A snapshot of my academic and personal work, with projects focused on databases, game design, and immersive experiences.',
             cards: [
                 {
-                    title: 'SAE 1.04 - Database for a fictional company',
+                    title: 'Livradois-Forez Forest Mapping',
                     paragraphs: [
-                        'I had the opportunity to contribute to SAE 1.04 in a team of four. The goal was to implement a database for a fictional inflatable game rental company.<br>I contributed my SQL skills by helping design the conceptual data model and by building the database itself, creating the SQL tables while making sure everything worked correctly.<br>I also used my writing skills by working on part of the business report and on the narrative script for the project presentation video.<br>Communication also played a major role in the success of this SAE and in the quality of my work.'
+                        "This project aims to provide a tree mapping platform for the Livradois-Forez association. The application makes it possible to consult data about tree species and diseases, and to add, edit, or remove entries for field monitoring needs.<br>The team delivered multiple connected outputs: a Kotlin mobile app, a PHP web app, a Blazor admin app, and an API linking all components.<br>I mainly worked on account authentication in PHP and on tree-related data management with EF. My contribution was interrupted mid-project because I left for my semester in Canada.",
+                        'Technologies used: Blazor, PHP, Entity Framework, ASP.NET, Kotlin.'
                     ],
-                    sectionTitle: 'Project visuals',
-                    note: 'Click the images to enlarge them',
-                    captions: ['Project ER diagram', 'Project logical model', 'Company overview sheet']
-                },
-                {
-                    title: 'Second-year SAE',
-                    paragraphs: [
-                        'Reserved space for presenting a second-year SAE. You can add a short summary of the project, your role in the team, the tools used, the deliverables produced, and a few visuals.',
-                        'To complete: the exact SAE title, context, objectives, and 2 to 3 visuals.'
-                    ],
-                    captions: ['Visual 1 coming soon', 'Visual 2 coming soon', 'Visual 3 coming soon']
+                    captions: ['Mapping interface preview']
                 },
                 {
                     title: 'VR project',
                     paragraphs: [
-                        'This virtual reality project takes the form of an atmospheric game inspired by nyctophobia, or fear of the dark. The player takes on the role of someone returning home after a long day at work, hoping to sit down and watch a movie. A few seconds after turning on the light, however, the power suddenly goes out and the house falls into darkness.<br>The goal is to explore the house with a flashlight, find the key that opens the cellar door, and then reach the electrical panel to restore the power. The project relies on a simple but effective progression built around tension, exploration, and the sense of immersion that VR makes possible.<br>This idea lets me work on staging, player pacing, and the creation of an immersive atmosphere built around a clear objective.',
-                        'Later on, I can add the tools used, a few screenshots, and a review of the gameplay and atmosphere choices.'
+                        'This project is being developed by a team of five in Unity3D, as an immersive experience focused on atmosphere and exploration.<br>At this stage, the environments are built and the implementation of interactive scene elements is in progress.<br>The core mechanics already defined include teleportation, interactions with environment objects, and events triggered at key moments of the player journey.',
+                        'Technologies used: Unity3D.'
                     ],
-                    captions: ['Mood and environment', 'Flashlight mechanic', 'UI or prototype']
+                    captions: ['Environment and mood preview', 'Teleportation and interactions preview', 'Scripted events preview']
+                },
+                {
+                    title: 'VR weather station connected to an API',
+                    paragraphs: [
+                        'Built in Unity as a functional prototype, this project focused on consuming weather data from an API and displaying it inside a VR environment.<br>The visual form was not the priority. The key objective was readable weather information rendered in-scene, especially on a television in a virtual living room.<br>The final result validates an end-to-end integration between Unity and the API with dynamic weather updates in 3D.',
+                        'Technologies used: Unity3D, weather API (HTTP/JSON requests).'
+                    ],
+                    captions: ['VR living room overview', 'Weather shown on the TV', 'Weather data variation', 'Final integrated prototype']
                 },
                 {
                     title: 'Video game design project',
                     paragraphs: [
-                        'This game design project is based on a one-pager built around <strong>Yume no Fukushuu</strong>, an action-adventure game imagined for PC and consoles, playable solo or in two-player co-op. The concept follows Kenji Mori, an exhausted junior developer who collapses after a forced nomikai. In his dream, offended Japanese deities appoint him as the instrument of revenge against the superiors who broke their sacred pact.<br>The game blends exploration, revelations, and fights in dreamlike realms inspired by each antagonist\'s obsessions. The world highlights a strong Japanese cultural atmosphere, a fantasy dimension, divine transformations, and a deliberately theatrical staging. The central idea is symbolic and social revenge rather than a classic heroic arc.<br>This work helps me develop worldbuilding, define a gameplay loop, and clearly formalize a game concept through a concise presentation document.',
-                        'Current base: the project one-pager. I can later add the main mechanics, inspirations, visuals, and the most important game design choices.'
+                        'This is a solo video game design project built around <strong>Yume no Fukushuu</strong>, imagined as an action-adventure experience for PC and consoles.<br>The objective was to design a complete concept and formalize it in a clear one-pager. The project also includes an original lore that is more detailed than what appears in the summary document.<br>The concept features 5 main bosses and focuses on strong consistency between narrative, worldbuilding, and gameplay intentions.',
+                        'Final deliverable: one-pager.'
                     ],
-                    captions: ['One-pager and pitch', 'Art direction', 'Gameplay loop']
+                    moreInfo: 'More information',
+                    captions: ['Project one-pager']
                 }
             ]
+        }
+    },
+    onepagerLore: {
+        fr: {
+            title: 'Lore detaille - Yume no Fukushuu',
+            heading: 'Lore detaille - Yume no Fukushuu',
+            intro: 'Presentation complete du projet Yume no Fukushuu.',
+            back: 'Retour aux projets',
+            previous: 'Page precedente',
+            next: 'Page suivante',
+            openPdf: 'Ouvrir le PDF complet',
+            hint: 'Astuce : touches fleche gauche/droite pour naviguer rapidement.',
+            indicator: 'Page {current} / {total}'
+        },
+        en: {
+            title: 'Detailed lore - Yume no Fukushuu',
+            heading: 'Detailed lore - Yume no Fukushuu',
+            intro: 'Complete presentation of the Yume no Fukushuu project.',
+            back: 'Back to projects',
+            previous: 'Previous page',
+            next: 'Next page',
+            openPdf: 'Open full PDF',
+            hint: 'Tip: use left/right arrow keys to navigate quickly.',
+            indicator: 'Page {current} / {total}'
         }
     }
 };
@@ -375,8 +407,12 @@ document.addEventListener('DOMContentLoaded', function() {
     updateThemeToggle(state.theme, state.language);
     updateProjectStatuses(state.language);
 
+    initRevealSequence();
+
     bindPreferences(state, page);
     initLightbox();
+    initProjectCarousels(state.language);
+    initLoreImageCarousel(state.language);
     initCarousel(state);
 });
 
@@ -573,7 +609,12 @@ const pageTranslators = {
             }
 
             setTextWithin(step, '.carte-etape h2', cardContent.title);
-            const paragraphs = step.querySelectorAll('.carte-etape > p');
+            const dateElement = step.querySelector('.carte-etape .etape-date');
+            if (dateElement && cardContent.date) {
+                dateElement.textContent = cardContent.date;
+            }
+
+            const paragraphs = step.querySelectorAll('.carte-etape > p:not(.etape-date)');
             paragraphs.forEach((paragraph, paragraphIndex) => {
                 paragraph.innerHTML = cardContent.paragraphs[paragraphIndex] || '';
             });
@@ -641,7 +682,7 @@ const pageTranslators = {
             }
 
             setTextWithin(card, 'h3', cardContent.title);
-            const paragraphs = card.querySelectorAll(':scope > p');
+            const paragraphs = card.querySelectorAll(':scope > p:not(.projet-more)');
             paragraphs.forEach((paragraph, paragraphIndex) => {
                 const value = cardContent.paragraphs[paragraphIndex];
                 if (!value) {
@@ -668,7 +709,35 @@ const pageTranslators = {
             captions.forEach((caption, captionIndex) => {
                 caption.textContent = cardContent.captions[captionIndex] || '';
             });
+
+            const moreInfoLink = card.querySelector('.project-more-link');
+            if (moreInfoLink && cardContent.moreInfo) {
+                moreInfoLink.textContent = cardContent.moreInfo;
+            }
         });
+
+        updateProjectCarouselLanguage(language);
+    },
+    onepagerLore(language) {
+        const content = pageContent.onepagerLore[language];
+        document.title = content.title;
+        setText('.titre', content.heading);
+        setText('.lore-intro', content.intro);
+        setText('.lore-back-link', content.back);
+        setText('.lore-open-pdf', content.openPdf);
+
+        const prevBtn = document.getElementById('lore-prev');
+        const nextBtn = document.getElementById('lore-next');
+        if (prevBtn) {
+            prevBtn.setAttribute('aria-label', content.previous);
+            prevBtn.setAttribute('title', content.previous);
+        }
+        if (nextBtn) {
+            nextBtn.setAttribute('aria-label', content.next);
+            nextBtn.setAttribute('title', content.next);
+        }
+
+        updateLoreIndicatorLabel(language);
     }
 };
 
@@ -693,12 +762,17 @@ function initLightbox() {
     let projectLightboxActive = false;
 
     document.addEventListener('click', function(event) {
-        const clickedImage = event.target.closest('.photos img');
-        if (!clickedImage || clickedImage.classList.contains('img-placeholder')) {
+        const clickedImage = event.target.closest('.photos img, #lore-carousel-image');
+        if (!clickedImage) {
             return;
         }
 
-        projectLightboxActive = Boolean(clickedImage.closest('.projets-page'));
+        const imageLink = clickedImage.closest('a');
+        if (imageLink) {
+            event.preventDefault();
+        }
+
+        projectLightboxActive = Boolean(clickedImage.closest('.projets-page') || clickedImage.closest('.lore-page'));
         lightbox.classList.toggle('project-lightbox', projectLightboxActive);
         lightboxImg.src = clickedImage.src;
         lightboxImg.classList.remove('zoomed');
@@ -830,4 +904,280 @@ function setTextWithin(root, selector, value) {
     if (element) {
         element.textContent = value;
     }
+}
+
+function initProjectCarousels(language) {
+    const carousels = document.querySelectorAll('.project-carousel');
+    if (!carousels.length) {
+        return;
+    }
+
+    const dotLabel = commonContent[language].carouselDot;
+
+    carousels.forEach((carousel) => {
+        const slides = carousel.querySelectorAll('.carousel-slide');
+        const prevBtn = carousel.querySelector('.project-carousel-btn.prev');
+        const nextBtn = carousel.querySelector('.project-carousel-btn.next');
+        const dotsContainer = carousel.parentElement.querySelector('.project-carousel-dots');
+
+        if (!slides.length || !prevBtn || !nextBtn || !dotsContainer) {
+            return;
+        }
+
+        let current = 0;
+        dotsContainer.innerHTML = '';
+
+        function showSlide(index) {
+            slides.forEach((slide, slideIndex) => {
+                const isActive = slideIndex === index;
+                slide.classList.toggle('active', isActive);
+                slide.setAttribute('aria-hidden', String(!isActive));
+            });
+
+            dotsContainer.querySelectorAll('.dot').forEach((dot, dotIndex) => {
+                dot.classList.toggle('active', dotIndex === index);
+            });
+        }
+
+        slides.forEach((_, index) => {
+            const dot = document.createElement('button');
+            dot.type = 'button';
+            dot.className = 'dot' + (index === 0 ? ' active' : '');
+            dot.setAttribute('aria-label', dotLabel.replace('{index}', String(index + 1)));
+            dot.addEventListener('click', () => {
+                current = index;
+                showSlide(current);
+            });
+            dotsContainer.appendChild(dot);
+        });
+
+        prevBtn.addEventListener('click', () => {
+            current = (current - 1 + slides.length) % slides.length;
+            showSlide(current);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            current = (current + 1) % slides.length;
+            showSlide(current);
+        });
+
+        showSlide(current);
+    });
+}
+
+function updateProjectCarouselLanguage(language) {
+    const dotLabel = commonContent[language].carouselDot;
+    document.querySelectorAll('.project-carousel-dots .dot').forEach((dot, index) => {
+        dot.setAttribute('aria-label', dotLabel.replace('{index}', String(index + 1)));
+    });
+}
+
+function initLoreImageCarousel(language) {
+    const wrapper = document.getElementById('lore-carousel-wrapper');
+    const viewer = document.getElementById('lore-carousel-image');
+    const dotsContainer = document.getElementById('lore-carousel-dots');
+    const prevBtn = document.getElementById('lore-prev');
+    const nextBtn = document.getElementById('lore-next');
+    if (!wrapper || !viewer || !dotsContainer || !prevBtn || !nextBtn) {
+        return;
+    }
+
+    const totalPages = Number.parseInt(wrapper.dataset.totalPages || '10', 10);
+    let currentPage = 1;
+    const dotLabel = commonContent[language].carouselDot;
+    let touchStartX = 0;
+
+    dotsContainer.innerHTML = '';
+    for (let index = 1; index <= totalPages; index += 1) {
+        const dot = document.createElement('button');
+        dot.type = 'button';
+        dot.className = 'dot' + (index === 1 ? ' active' : '');
+        dot.setAttribute('aria-label', dotLabel.replace('{index}', String(index)));
+        dot.addEventListener('click', () => {
+            currentPage = index;
+            renderPage();
+        });
+        dotsContainer.appendChild(dot);
+    }
+
+    function renderPage() {
+        viewer.src = `../photo/lore${currentPage}.png`;
+        viewer.alt = `Page ${currentPage} du lore Yume no Fukushuu`;
+        wrapper.dataset.currentPage = String(currentPage);
+        dotsContainer.querySelectorAll('.dot').forEach((dot, index) => {
+            dot.classList.toggle('active', index + 1 === currentPage);
+        });
+        updateLoreIndicatorLabel(language);
+    }
+
+    viewer.addEventListener('error', () => {
+        const jpgFallback = `../photo/lore${currentPage}.jpg`;
+        if (!viewer.src.endsWith(`lore${currentPage}.jpg`)) {
+            viewer.src = jpgFallback;
+        }
+    });
+
+    prevBtn.addEventListener('click', () => {
+        currentPage = currentPage <= 1 ? totalPages : currentPage - 1;
+        renderPage();
+    });
+
+    nextBtn.addEventListener('click', () => {
+        currentPage = currentPage >= totalPages ? 1 : currentPage + 1;
+        renderPage();
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'ArrowLeft') {
+            prevBtn.click();
+        }
+        if (event.key === 'ArrowRight') {
+            nextBtn.click();
+        }
+    });
+
+    wrapper.addEventListener('touchstart', (event) => {
+        touchStartX = event.changedTouches[0].clientX;
+    }, { passive: true });
+
+    wrapper.addEventListener('touchend', (event) => {
+        const touchEndX = event.changedTouches[0].clientX;
+        const delta = touchEndX - touchStartX;
+        if (Math.abs(delta) < 45) {
+            return;
+        }
+        if (delta < 0) {
+            nextBtn.click();
+        } else {
+            prevBtn.click();
+        }
+    }, { passive: true });
+
+    renderPage();
+}
+
+function updateLoreIndicatorLabel(language) {
+    const wrapper = document.getElementById('lore-carousel-wrapper');
+    const indicator = document.getElementById('lore-page-indicator');
+    const content = pageContent.onepagerLore[language];
+    if (!wrapper || !indicator || !content) {
+        return;
+    }
+
+    const total = Number.parseInt(wrapper.dataset.totalPages || '10', 10);
+    const current = Number.parseInt(wrapper.dataset.currentPage || '1', 10);
+    indicator.textContent = content.indicator
+        .replace('{current}', String(current))
+        .replace('{total}', String(total));
+}
+
+function initCustomCursor() {
+    const hasFinePointer = window.matchMedia('(pointer: fine)').matches;
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!hasFinePointer || prefersReducedMotion) {
+        return;
+    }
+
+    const root = document.documentElement;
+    root.setAttribute('data-custom-cursor', 'on');
+
+    const dot = document.createElement('div');
+    dot.className = 'custom-cursor-dot';
+    const ring = document.createElement('div');
+    ring.className = 'custom-cursor-ring';
+    document.body.appendChild(dot);
+    document.body.appendChild(ring);
+
+    let targetX = window.innerWidth / 2;
+    let targetY = window.innerHeight / 2;
+    let ringX = targetX;
+    let ringY = targetY;
+    let isHovering = false;
+    let isPressed = false;
+    let isVisible = false;
+
+    const interactiveSelector = 'a, button, .tool-btn, .dot, .project-more-link, [role="button"], .project-carousel-btn, .lore-nav-btn';
+
+    function showCursor() {
+        isVisible = true;
+        dot.style.opacity = '1';
+        ring.style.opacity = '0.88';
+    }
+
+    function hideCursor() {
+        isVisible = false;
+        dot.style.opacity = '0';
+        ring.style.opacity = '0';
+    }
+
+    document.addEventListener('mousemove', (event) => {
+        targetX = event.clientX;
+        targetY = event.clientY;
+        dot.style.transform = `translate3d(${targetX}px, ${targetY}px, 0) translate(-50%, -50%)`;
+        showCursor();
+    });
+
+    document.addEventListener('mouseover', (event) => {
+        isHovering = Boolean(event.target.closest(interactiveSelector));
+    });
+
+    document.addEventListener('mouseout', (event) => {
+        if (event.target.closest(interactiveSelector)) {
+            isHovering = false;
+        }
+    });
+
+    document.addEventListener('mousedown', () => {
+        isPressed = true;
+    });
+
+    document.addEventListener('mouseup', () => {
+        isPressed = false;
+    });
+
+    window.addEventListener('blur', hideCursor);
+    document.addEventListener('mouseleave', hideCursor);
+
+    function animateCursor() {
+        ringX += (targetX - ringX) * 0.16;
+        ringY += (targetY - ringY) * 0.16;
+
+        const scale = isPressed ? 0.92 : (isHovering ? 1.22 : 1);
+        dot.style.transform = `translate3d(${targetX}px, ${targetY}px, 0) translate(-50%, -50%) scale(${isPressed ? 0.85 : 1})`;
+        ring.style.transform = `translate3d(${ringX}px, ${ringY}px, 0) translate(-50%, -50%) scale(${scale})`;
+        ring.style.opacity = isVisible ? (isHovering ? '1' : '0.88') : '0';
+        requestAnimationFrame(animateCursor);
+    }
+
+    animateCursor();
+}
+
+function initRevealSequence() {
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReducedMotion) {
+        return;
+    }
+
+    const targets = document.querySelectorAll('.projet, .a-propos, .timeline .etape, .carte-complementaire, .lore-viewer-card, .blocTexte');
+    if (!targets.length) {
+        return;
+    }
+
+    const observer = new IntersectionObserver((entries, currentObserver) => {
+        entries.forEach((entry) => {
+            if (!entry.isIntersecting) {
+                return;
+            }
+            entry.target.classList.add('is-visible');
+            currentObserver.unobserve(entry.target);
+        });
+    }, {
+        threshold: 0.14
+    });
+
+    targets.forEach((target, index) => {
+        target.classList.add('reveal-item');
+        target.style.setProperty('--reveal-delay', `${Math.min(index * 45, 260)}ms`);
+        observer.observe(target);
+    });
 }

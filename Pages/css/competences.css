@@ -59,7 +59,7 @@
 
 .skill-head {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     margin-bottom: 0.4rem;
 }
@@ -68,11 +68,6 @@
 .carte-complementaire h3 {
     margin: 0;
     color: var(--title-color);
-}
-
-.skill-head span {
-    font-weight: 700;
-    color: var(--accent-500);
 }
 
 .carte-complementaire h2 {
@@ -98,19 +93,6 @@
     color: #42505c;
 }
 
-.jauge {
-    background-color: var(--surface-2);
-    border-radius: 999px;
-    overflow: hidden;
-    height: 14px;
-}
-
-.niveau {
-    height: 100%;
-    background: linear-gradient(90deg, var(--blue-800), var(--blue-700));
-    border-radius: 999px;
-}
-
 [data-theme="dark"] .pills-cv span {
     background: #203243;
     border-color: #49617a;
@@ -130,18 +112,6 @@
     color: #d9e5f1;
 }
 
-[data-theme="dark"] .skill-head span {
-    color: #f3e2b2;
-}
-
-[data-theme="dark"] .jauge {
-    background-color: #2c4154;
-}
-
-[data-theme="dark"] .niveau {
-    background: linear-gradient(90deg, #f0d69c, #b98d33);
-}
-
 @media (max-width: 980px) {
     .competences-layout {
         grid-template-columns: 1fr;
@@ -149,12 +119,6 @@
 }
 
 @media (max-width: 768px) {
-    .skill-head {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.35rem;
-    }
-
     .skill-row,
     .carte-complementaire {
         padding: 0.95rem;

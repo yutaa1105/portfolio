@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <title>Réalisations - Candice Carton</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projets académiques et personnels de Candice Carton : base de données, conception de jeu, expérience VR et travaux en cours.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/projets.css">
 </head>
@@ -26,113 +27,112 @@
         <p class="projets-intro">Un aperçu de mes réalisations académiques et personnelles, avec des projets orientés base de données, game design et expériences immersives.</p>
 
         <section class="projets-layout" aria-label="Liste des réalisations">
-            <article class="projet projet-featured">
-                <div class="project-meta">
-                    <span class="project-status" data-project-status="completed"></span>
-                </div>
-                <h3>SAE 1.04 - Base de données pour une entreprise fictive</h3>
-                <p>
-                    J'ai eu l'occasion de participer à la réalisation de la SAE 1.04 en groupe de 4, qui consistait à implémenter une base de données pour une entreprise fictive de location de jeux gonflables.
-                    J'ai pu apporter mes compétences en SQL en travaillant à l'élaboration du MCD ainsi qu'à la programmation de la base de données, en créant les différentes tables en SQL tout en veillant à leur bon fonctionnement.
-                    <br>Mais j'ai aussi mis à l'œuvre mes compétences en rédaction en réalisant une partie du rapport économique ainsi que le texte narratif de la vidéo de présentation du projet.
-                    <br>Enfin, la communication a joué un rôle majeur dans le bon déroulement de cette SAE ainsi que dans la qualité de mon travail.
-                </p>
 
-                <h2>Illustrations du projet</h2>
-                <p class="projet-note"><em>Cliquez sur les images pour les agrandir</em></p>
-                <div class="photos">
-                    <figure>
-                        <img src="../photo/MCD.png" alt="Schéma MCD du projet">
-                        <figcaption>Schéma MCD du projet</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="../photo/MLD.png" alt="Schéma MLD du projet">
-                        <figcaption>Schéma MLD du projet</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="../photo/entreprise.png" alt="Fiche entreprise">
-                        <figcaption>Fiche signalétique de l'entreprise</figcaption>
-                    </figure>
-                </div>
-            </article>
-
-            <article class="projet projet-a-venir">
+            <article class="projet">
                 <div class="project-meta">
                     <span class="project-status" data-project-status="in-progress"></span>
                 </div>
-                <h3>SAE de 2e année</h3>
+                <h3>Cartographie forestière du Livradois-Forez</h3>
                 <p>
-                    Zone reservee pour presenter une SAE de 2e annee. Tu pourras y ajouter un resume court du projet, ton role dans l'equipe, les outils utilises, les livrables produits et quelques illustrations.
+                    Ce projet vise à fournir une cartographie des arbres pour l'association du Livradois-Forez. L'application permet de consulter les informations liées aux essences et aux maladies, puis d'ajouter, modifier ou supprimer des entrées selon les besoins du suivi terrain.
+                    <br>Le travail d'équipe a abouti à plusieurs livrables complémentaires : une application mobile en Kotlin, une application web en PHP, une application d'administration en Blazor et une API pour relier l'ensemble.
+                    <br>J'ai principalement travaillé sur le système de connexion des comptes côté PHP ainsi que sur la gestion des données relatives aux arbres en EF. Ma contribution a été interrompue en cours de projet en raison de mon départ pour le semestre au Canada.
                 </p>
-                <p class="projet-note">A completer avec le titre exact de la SAE, le contexte, les objectifs et 2 a 3 visuels.</p>
+                <p class="projet-note">Technologies utilisées : Blazor, PHP, Entity Framework, ASP.NET, Kotlin.</p>
                 <div class="photos photos-futures" aria-label="Emplacements d'images a venir">
                     <figure>
-                        <img class="img-placeholder" src="../images/placeholder-project.svg" alt="Image a venir pour la SAE de 2e annee">
-                        <figcaption>Visuel 1 a venir</figcaption>
-                    </figure>
-                    <figure>
-                        <img class="img-placeholder" src="../images/placeholder-project.svg" alt="Image a venir pour la SAE de 2e annee">
-                        <figcaption>Visuel 2 a venir</figcaption>
-                    </figure>
-                    <figure>
-                        <img class="img-placeholder" src="../images/placeholder-project.svg" alt="Image a venir pour la SAE de 2e annee">
-                        <figcaption>Visuel 3 a venir</figcaption>
+                        <img src="../photo/CartographieForestière.png" alt="Aperçu visuel du projet de SAE de 2e année">
+                        <figcaption>Aperçu de l'interface de cartographie</figcaption>
                     </figure>
                 </div>
             </article>
 
-            <article class="projet projet-a-venir">
+            <article class="projet">
                 <div class="project-meta">
                     <span class="project-status" data-project-status="in-progress"></span>
                 </div>
                 <h3>Projet VR</h3>
                 <p>
-                    Ce projet de realite virtuelle prend la forme d'un jeu d'ambiance inspire de la nyctophobie, c'est-a-dire la peur du noir. Le joueur incarne une personne qui rentre chez elle apres une longue journee de travail et souhaite simplement s'installer pour regarder un film. Pourtant, quelques secondes apres avoir allume la lumiere, le courant se coupe brutalement et la maison bascule dans l'obscurite.
-                    <br>Le but est alors d'explorer la maison muni d'une lampe torche pour retrouver la cle qui permet d'ouvrir la porte de la cave, puis d'acceder au panneau electrique afin de retablir le courant. Le projet repose donc sur une progression simple, mais efficace, qui joue sur la tension, l'exploration et l'immersion propres a la VR.
-                    <br>Cette idee me permet de travailler a la fois la mise en scene, le rythme du parcours joueur et la creation d'une atmosphere immersive autour d'un objectif clair.
+                    Projet réalisé en groupe de 5 sous Unity3D, autour d'une expérience immersive orientée ambiance et exploration.
+                    <br>À ce stade, les décors sont créés et la mise en place des éléments interactifs est en cours d'implémentation dans la scène.
+                    <br>Les mécaniques principales déjà définies sont la téléportation, les interactions avec des éléments du décor et des événements déclenchés à des moments clés du parcours joueur.
                 </p>
-                <p class="projet-note">Tu pourras ensuite ajouter ici les outils utilises, quelques captures d'ecran et un bilan sur les choix de gameplay ou d'ambiance.</p>
-                <div class="photos photos-futures" aria-label="Emplacements d'images a venir">
+                <p class="projet-note">Technologies utilisées : Unity3D.</p>
+                <div class="photos photos-futures" aria-label="Illustrations du projet VR">
                     <figure>
-                        <img class="img-placeholder" src="../images/placeholder-project.svg" alt="Image a venir pour le projet VR">
-                        <figcaption>Ambiance / decor</figcaption>
+                        <img class="img-placeholder" src="../images/placeholder-project.svg" alt="Illustration du décor du projet VR">
+                        <figcaption>Décor et ambiance</figcaption>
                     </figure>
                     <figure>
-                        <img class="img-placeholder" src="../images/placeholder-project.svg" alt="Image a venir pour le projet VR">
-                        <figcaption>Mecanique lampe torche</figcaption>
+                        <img class="img-placeholder" src="../images/placeholder-project.svg" alt="Illustration des interactions du projet VR">
+                        <figcaption>Téléportation et interactions</figcaption>
                     </figure>
                     <figure>
-                        <img class="img-placeholder" src="../images/placeholder-project.svg" alt="Image a venir pour le projet VR">
-                        <figcaption>UI ou prototype</figcaption>
+                        <img class="img-placeholder" src="../images/placeholder-project.svg" alt="Illustration des événements du projet VR">
+                        <figcaption>Événements scénarisés</figcaption>
                     </figure>
                 </div>
             </article>
 
-            <article class="projet projet-a-venir">
+            <article class="projet">
                 <div class="project-meta">
-                    <span class="project-status" data-project-status="in-progress"></span>
+                    <span class="project-status" data-project-status="completed"></span>
                 </div>
-                <h3>Projet de conception de jeu video</h3>
+                <h3>Station météo VR connectée à une API</h3>
                 <p>
-                    Ce projet de conception de jeu video s'appuie sur un one-pager autour de <strong>Yume no Fukushuu</strong>, un jeu d'action-aventure imagine pour PC et consoles, jouable en solo ou en cooperation a deux joueurs. Le concept suit Kenji Mori, un developpeur junior epuise qui s'effondre apres un nomikai force. Dans son reve, des divinites japonaises offensees le designent comme instrument de vengeance contre les superieurs qui ont trahi leur pacte sacre.
-                    <br>Le jeu melange exploration, revelation et affrontements dans des royaumes oniriques inspires des obsessions de chaque antagoniste. L'univers met en avant une ambiance fortement marquee par la culture japonaise, avec une dimension fantastique, des transformations divines et une mise en scene volontairement theatrale. L'idee centrale repose sur une vengeance symbolique et sociale, plus que sur un schema heroique classique.
-                    <br>Ce travail me permet de developper la construction d'un univers, la definition d'une boucle de gameplay et la capacite a formaliser clairement un concept de jeu a travers un document de presentation synthetique.
+                    Projet réalisé sous Unity avec une logique orientée prototype fonctionnel : l'objectif principal était de récupérer des données météo via une API puis de les afficher dans un environnement VR.
+                    <br>La partie visuelle était volontairement secondaire. L'information météo devait surtout être lisible et visible dans la scène, notamment sur une télévision placée dans un salon virtuel.
+                    <br>Le résultat final permet d'afficher dynamiquement les données météo dans l'univers 3D et de valider l'intégration bout en bout entre Unity et l'API.
                 </p>
-                <p class="projet-note">Base actuelle : one-pager du projet. Tu pourras ensuite ajouter ici les mecaniques principales, les inspirations, des visuels et les choix de game design les plus importants.</p>
+                <p class="projet-note">Technologies utilisées : Unity3D, API météo (requêtes HTTP/JSON).</p>
+
+                <div class="project-carousel" aria-label="Carrousel du projet station météo VR">
+                    <button type="button" class="project-carousel-btn prev" data-action="prev" aria-label="Image précédente">&#10094;</button>
+
+                    <div class="photos" aria-label="Galerie du projet station météo VR">
+                        <figure class="carousel-slide active">
+                            <img src="../photo/weather1.png" alt="Salon virtuel avec télévision affichant la météo">
+                            <figcaption>Vue générale du salon VR</figcaption>
+                        </figure>
+                        <figure class="carousel-slide">
+                            <img src="../photo/weather2.png" alt="Télévision du salon avec données météo récupérées depuis l'API">
+                            <figcaption>Affichage météo sur la télévision</figcaption>
+                        </figure>
+                        <figure class="carousel-slide">
+                            <img src="../photo/weather3.png" alt="Variation d'écran météo dans la scène VR">
+                            <figcaption>Variation des informations météo</figcaption>
+                        </figure>
+                        <figure class="carousel-slide">
+                            <img src="../photo/weather4.png" alt="Prototype final de la station météo intégrée en VR">
+                            <figcaption>Prototype final intégré à la scène</figcaption>
+                        </figure>
+                    </div>
+
+                    <button type="button" class="project-carousel-btn next" data-action="next" aria-label="Image suivante">&#10095;</button>
+                </div>
+                <div class="project-carousel-dots" aria-label="Navigation du carrousel"></div>
+            </article>
+
+            <article class="projet">
+                <div class="project-meta">
+                    <span class="project-status" data-project-status="completed"></span>
+                </div>
+                <h3>Projet de conception de jeu vidéo</h3>
+                <p>
+                    Projet solo de conception de jeu vidéo autour de <strong>Yume no Fukushuu</strong>, pensé comme une expérience d'action-aventure sur PC et consoles.
+                    <br>L'objectif était d'imaginer un concept complet et de le formaliser dans un one-pager clair. Le projet comprend également tout un lore original, plus détaillé que ce qui est présenté dans le document de synthèse.
+                    <br>Le concept intègre 5 boss principaux et met l'accent sur la cohérence entre narration, univers et intentions de gameplay.
+                </p>
+                <p class="projet-note">Livrable réalisé : one-pager.</p>
+                <p class="projet-more">
+                    <a class="project-more-link" href="onepager-lore.html">Plus d'informations</a>
+                </p>
                 <div class="photos photos-futures" aria-label="Emplacements d'images a venir">
                     <figure>
-                        <img class="img-placeholder" src="../images/placeholder-project.svg" alt="Image a venir pour le projet de conception de jeu video">
-                        <figcaption>One-pager / pitch</figcaption>
-                    </figure>
-                    <figure>
-                        <img class="img-placeholder" src="../images/placeholder-project.svg" alt="Image a venir pour le projet de conception de jeu video">
-                        <figcaption>Direction artistique</figcaption>
-                    </figure>
-                    <figure>
-                        <img class="img-placeholder" src="../images/placeholder-project.svg" alt="Image a venir pour le projet de conception de jeu video">
-                        <figcaption>Gameplay loop</figcaption>
+                        <a href="../photo/Lore.pdf" target="_blank" rel="noopener noreferrer">
+                            <img src="../photo/Onepager.png" alt="Aperçu du one-pager du projet de conception de jeu vidéo">
+                        </a>
+                        <figcaption>One-pager du projet</figcaption>
                     </figure>
                 </div>
             </article>
