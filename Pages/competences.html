@@ -26,78 +26,76 @@
     <main>
         <h1 class="titre">Mes compétences</h1>
 
-        <section class="a-propos intro-competences">
-            <h2>Vue d'ensemble</h2>
-            <p>
-                Cette page reprend la synthèse de mon CV avec un niveau de détail plus pratique pour la lecture web.
-                Le CV reste le document officiel, et cette version permet de visualiser rapidement mes points forts.
-            </p>
-            <div class="pills-cv" aria-label="Synthèse CV">
-                <span>Python</span>
-                <span>C</span>
-                <span>HTML/CSS</span>
-                <span>SQL</span>
-                <span>Anglais</span>
-                <span>Travail en équipe</span>
-                <span>Communication</span>
-                <span>Autonomie</span>
-            </div>
-        </section>
+        <section class="a-propos wheel-layout" aria-label="Roue interactive des compétences">
+            <div class="wheel-panel">
+                <h2 class="carousel-title" data-carousel-title>Carrousel de compétences</h2>
+                <h3 class="pole-title" data-pole-title>Pôle technique</h3>
+                <div class="wheel-controls" role="group" aria-label="Contrôles de la roue">
+                    <button type="button" class="wheel-btn" data-wheel-prev>◀</button>
+                    <button type="button" class="wheel-btn" data-wheel-toggle>Pause</button>
+                    <button type="button" class="wheel-btn" data-wheel-next>▶</button>
+                </div>
 
-        <section class="a-propos competences-layout">
-            <div class="bloc-tech">
-                <h2>Compétences techniques</h2>
-                <article class="skill-row">
-                    <div class="skill-head">
-                        <h3>Python</h3>
+                <div class="skills-carousel" data-skills-carousel>
+                    <div class="carousel-card" data-carousel-card>
+                        <h3 data-wheel-label>C</h3>
+                        <p data-wheel-detail>Programmation procédurale et algorithmique.</p>
                     </div>
-                    <p>Scripts, automatisation, manipulation de fichiers et résolution de problèmes.</p>
-                </article>
-
-                <article class="skill-row">
-                    <div class="skill-head">
-                        <h3>C</h3>
-                    </div>
-                    <p>Programmation procédurale, structures de contrôle, fonctions et logique algorithmique.</p>
-                </article>
-
-                <article class="skill-row">
-                    <div class="skill-head">
-                        <h3>HTML / CSS</h3>
-                    </div>
-                    <p>Création de pages statiques, mise en page responsive et utilisation de Flexbox.</p>
-                </article>
-
-                <article class="skill-row">
-                    <div class="skill-head">
-                        <h3>SQL</h3>
-                    </div>
-                    <p>Modélisation de base de données, création de tables, requêtes SELECT et INSERT.</p>
-                </article>
+                    <p class="carousel-meta">
+                        <span data-carousel-index>1</span>
+                        /
+                        <span data-carousel-total>7</span>
+                    </p>
+                </div>
             </div>
 
-            <aside class="bloc-complementaire" aria-label="Compétences complémentaires">
-                <article class="carte-complementaire">
-                    <h2>Langue</h2>
-                    <h3>Anglais - Bon niveau</h3>
-                    <p>Bonne compréhension écrite et orale, aisance à l'écrit, vocabulaire technique informatique.</p>
+            <div class="skills-blocks" aria-label="Blocs de compétences">
+                <article class="skills-block">
+                    <h3 data-block-title="gamesMobile">Jeux & Mobile</h3>
+                    <div class="mini-pills" data-block-items="gamesMobile">
+                        <span>Unity 3D (C#)</span>
+                        <span>Android Studio</span>
+                    </div>
                 </article>
 
-                <article class="carte-complementaire">
-                    <h2>Compétences transversales</h2>
-                    <ul>
-                        <li>Travail en équipe sur des SAE en groupe</li>
-                        <li>Communication écrite et restitution orale</li>
-                        <li>Autonomie et adaptation rapide</li>
-                        <li>Curiosité technique et progression continue</li>
-                    </ul>
+                <article class="skills-block">
+                    <h3 data-block-title="webDotnet">Web & .NET</h3>
+                    <div class="mini-pills" data-block-items="webDotnet">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                        <span>ASP.NET</span>
+                        <span>Blazor</span>
+                        <span>.NET MAUI</span>
+                        <span>Entity Framework</span>
+                    </div>
                 </article>
 
-                <article class="carte-complementaire">
-                    <h2>Outils déjà utilisés</h2>
-                    <p>Photoshop, Elementor, environnements de développement pour Python/C/SQL, outils bureautiques collaboratifs.</p>
+                <article class="skills-block">
+                    <h3 data-block-title="databases">Bases de données</h3>
+                    <div class="mini-pills" data-block-items="databases">
+                        <span>PostgreSQL</span>
+                        <span>SQL Server</span>
+                    </div>
                 </article>
-            </aside>
+
+                <article class="skills-block">
+                    <h3 data-block-title="uiux">UI / UX</h3>
+                    <div class="mini-pills" data-block-items="uiux">
+                        <span>Conception d'interfaces</span>
+                        <span>Expérience utilisateur</span>
+                    </div>
+                </article>
+
+                <article class="skills-block">
+                    <h3 data-block-title="tools">Outils</h3>
+                    <div class="mini-pills" data-block-items="tools">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
 

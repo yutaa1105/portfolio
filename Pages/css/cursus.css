@@ -162,18 +162,18 @@ PAGE CURSUS.HTML
 }
 
 [data-theme="dark"] .etape-date {
-	color: #f0d69c;
+	color: #E85D5D;
 	background: rgba(240, 214, 156, 0.14);
 	border-color: rgba(240, 214, 156, 0.32);
 }
 
 [data-theme="dark"] .timeline::before {
-	background: linear-gradient(180deg, #f0d69c, #b98d33);
+	background: linear-gradient(180deg, #E85D5D, #E85D5D);
 }
 
 [data-theme="dark"] .etape::before {
 	background: #1a2a38;
-	border-color: #f0d69c;
+	border-color: #E85D5D;
 }
 
 @media (max-width: 900px) {

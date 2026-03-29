@@ -160,9 +160,9 @@
 }
 
 .dot.active {
-    background: linear-gradient(135deg, var(--accent-500), #b8944f);
+    background: linear-gradient(135deg, #E85D5D, #C084FC);
     transform: scale(1.35);
-    box-shadow: 0 4px 10px rgba(201, 169, 97, 0.5);
+    box-shadow: 0 4px 10px rgba(232, 93, 93, 0.5);
 }
 
 .carrousel-btn {

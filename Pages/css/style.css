@@ -50,38 +50,44 @@ COMMUN A TOUTES LES PAGES
 }
 
 [data-theme="dark"] {
-    --text-900: #f6fbff;
-    --text-700: #e0ebf6;
-    --page-bg-start: #02070e;
-    --page-bg-end: #0a1420;
-    --header-bg: rgba(2, 8, 14, 0.98);
-    --header-border: rgba(171, 199, 226, 0.36);
-    --footer-separator: rgba(186, 212, 236, 0.42);
-    --surface-1: #162738;
-    --surface-2: #1c3145;
-    --surface-3: #23394f;
-    --surface-border: rgba(141, 170, 198, 0.42);
-    --surface-border-strong: #6c87a3;
+    --text-900: #F3F0FF;
+    --text-700: #9CA3AF;
+    --page-bg-start: #0D0D0D;
+    --page-bg-end: #0D0D0D;
+    --header-bg: rgba(13, 13, 13, 0.98);
+    --header-border: rgba(232, 93, 93, 0.36);
+    --footer-separator: rgba(232, 93, 93, 0.42);
+    --surface-1: #1A0A2E;
+    --surface-2: #2D1B69;
+    --surface-3: #1A0A2E;
+    --surface-border: rgba(192, 132, 252, 0.42);
+    --surface-border-strong: #C084FC;
     --surface-shadow: rgba(0, 0, 0, 0.28);
     --surface-shadow-strong: rgba(0, 0, 0, 0.4);
-    --menu-text: #ffffff;
-    --menu-bg-start: rgba(66, 115, 153, 0.94);
-    --menu-bg-end: rgba(38, 74, 105, 0.94);
-    --menu-hover-start: rgba(104, 155, 198, 0.99);
-    --menu-hover-end: rgba(63, 103, 138, 0.99);
-    --menu-active-start: rgba(201, 169, 97, 0.88);
-    --menu-active-end: rgba(149, 120, 58, 0.92);
-    --tool-bg: rgba(238, 244, 251, 0.14);
-    --tool-bg-hover: rgba(238, 244, 251, 0.24);
-    --tool-border: rgba(238, 244, 251, 0.28);
-    --tool-text: #eef4fb;
-    --link-color: #d3e9ff;
-    --link-visited: #bfdbf5;
-    --title-color: #ffe4ad;
-    --footer-bg: #040b14;
-    --footer-text: #eef4fb;
-    --lightbox-bg: rgba(2, 5, 8, 0.86);
-    --lightbox-image-bg: #13212d;
+    --menu-text: #F3F0FF;
+    --menu-bg-start: rgba(26, 10, 46, 0.94);
+    --menu-bg-end: rgba(45, 27, 105, 0.94);
+    --menu-hover-start: rgba(232, 93, 93, 0.99);
+    --menu-hover-end: rgba(192, 132, 252, 0.99);
+    --menu-active-start: rgba(232, 93, 93, 0.88);
+    --menu-active-end: rgba(192, 132, 252, 0.92);
+    --tool-bg: rgba(243, 240, 255, 0.14);
+    --tool-bg-hover: rgba(243, 240, 255, 0.24);
+    --tool-border: rgba(232, 93, 93, 0.28);
+    --tool-text: #F3F0FF;
+    --link-color: #C084FC;
+    --link-visited: #C084FC;
+    --title-color: #E85D5D;
+    --footer-bg: #0D0D0D;
+    --footer-text: #F3F0FF;
+    --lightbox-bg: rgba(13, 13, 13, 0.86);
+    --lightbox-image-bg: #1A0A2E;
+    
+    /* Cyberpunk Neon Effects */
+    --accent-500: #E85D5D;
+    --neon-red: #E85D5D;
+    --neon-purple: #C084FC;
+    --neon-orange: #F97316;
 }
 
 @keyframes fadeInUp {
@@ -104,6 +110,21 @@ COMMUN A TOUTES LES PAGES
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+@keyframes neonGlow {
+    0%, 100% {
+        text-shadow: 0 0 10px rgba(232, 93, 93, 0.8), 0 0 20px rgba(192, 132, 252, 0.4);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(232, 93, 93, 1), 0 0 30px rgba(192, 132, 252, 0.6);
+    }
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3 {
+    text-shadow: 0 0 10px rgba(232, 93, 93, 0.5);
 }
 
 .reveal-item {
@@ -252,7 +273,7 @@ header {
 }
 
 .menu a:hover {
-    color: var(--accent-500);
+    color: var(--neon-purple);
     transform: translateY(-2px);
     opacity: 1;
 }
@@ -340,6 +361,12 @@ header {
     background: linear-gradient(135deg, rgba(201, 169, 97, 0.94), rgba(167, 133, 64, 0.94));
     border-color: rgba(255, 245, 219, 0.28);
     color: #13202b;
+}
+
+[data-theme="dark"] .language-switcher .tool-btn.active {
+    background: linear-gradient(135deg, rgba(232, 93, 93, 0.95), rgba(201, 63, 63, 0.95));
+    border-color: rgba(255, 184, 184, 0.34);
+    color: #fff4f4;
 }
 
 .theme-toggle-icon {
@@ -491,7 +518,7 @@ main {
 /* Style pour chaque titre de classe titre2 */
 .titre2 {
     display: block;
-    color: var(--blue-700);
+    color: var(--neon-purple);
     font-size: 1.4em;
     text-align: left;
     margin: 0 0 1em 0;
@@ -521,7 +548,7 @@ a:visited {
 }
 
 a:hover {
-    color: var(--accent-500);
+    color: var(--neon-red);
 }
 
 footer {

@@ -81,57 +81,87 @@ const pageContent = {
         fr: {
             title: 'Compétences - Candice Carton',
             heading: 'Mes compétences',
-            overviewTitle: "Vue d'ensemble",
-            overviewText: 'Cette page reprend la synthèse de mon CV avec un niveau de détail plus pratique pour la lecture web. Le CV reste le document officiel, et cette version permet de visualiser rapidement mes points forts.',
-            pills: ['Python', 'C', 'HTML/CSS', 'SQL', 'Anglais', 'Travail en équipe', 'Communication', 'Autonomie'],
-            technicalTitle: 'Compétences techniques',
-            technicalDescriptions: [
-                'Scripts, automatisation, manipulation de fichiers et résolution de problèmes.',
-                'Programmation procédurale, structures de contrôle, fonctions et logique algorithmique.',
-                'Création de pages statiques, mise en page responsive et utilisation de Flexbox.',
-                'Modélisation de base de données, création de tables, requêtes SELECT et INSERT.'
+            overviewTitle: 'Carrousel de compétences',
+            poleTitle: 'Pôle technique',
+            wheelControls: {
+                pause: 'Pause',
+                auto: 'Auto',
+                prevAria: 'Compétence précédente',
+                nextAria: 'Compétence suivante'
+            },
+            wheelSkills: [
+                { label: 'C', detail: 'Programmation procédurale et algorithmique sur des projets académiques.' },
+                { label: 'C++', detail: 'Réalisation d\'un projet Orbitro en jeu web, développé en .NET MAUI.' },
+                { label: 'C#', detail: 'Utilisé avec Unity 3D pour la logique gameplay et interactions.' },
+                { label: 'Java', detail: 'Réalisation d\'une application de météo.' },
+                { label: 'Kotlin', detail: 'Participation à une application mobile Android en équipe.' },
+                { label: 'Python', detail: 'Scripts, automatisation de tâches et résolution de problèmes.' },
+                { label: 'SQL', detail: 'Conception relationnelle et requêtes pour interroger les données.' }
             ],
-            secondaryCards: {
-                languageTitle: 'Langue',
-                languageLevel: 'Anglais - Bon niveau',
-                languageText: "Bonne compréhension écrite et orale, aisance à l'écrit, vocabulaire technique informatique.",
-                softSkillsTitle: 'Compétences transversales',
-                softSkills: [
-                    'Travail en équipe sur des SAE en groupe',
-                    'Communication écrite et restitution orale',
-                    'Autonomie et adaptation rapide',
-                    'Curiosité technique et progression continue'
-                ],
-                toolsTitle: 'Outils déjà utilisés',
-                toolsText: 'Photoshop, Elementor, environnements de développement pour Python/C/SQL, outils bureautiques collaboratifs.'
+            blocks: {
+                gamesMobile: {
+                    title: 'Jeux & Mobile',
+                    items: ['Unity 3D (C#)', 'Android Studio']
+                },
+                webDotnet: {
+                    title: 'Web & .NET',
+                    items: ['HTML', 'CSS', 'JavaScript', 'PHP', 'ASP.NET', 'Blazor', '.NET MAUI', 'Entity Framework']
+                },
+                databases: {
+                    title: 'Bases de données',
+                    items: ['PostgreSQL', 'SQL Server']
+                },
+                uiux: {
+                    title: 'UI / UX',
+                    items: ['Conception d\'interfaces', 'Expérience utilisateur']
+                },
+                tools: {
+                    title: 'Outils',
+                    items: ['Git', 'GitHub']
+                }
             }
         },
         en: {
             title: 'Skills - Candice Carton',
             heading: 'My skills',
-            overviewTitle: 'Overview',
-            overviewText: 'This page expands on the summary from my resume with a more practical level of detail for the web. The resume remains the official document, while this version highlights my strengths more quickly.',
-            pills: ['Python', 'C', 'HTML/CSS', 'SQL', 'English', 'Teamwork', 'Communication', 'Independence'],
-            technicalTitle: 'Technical skills',
-            technicalDescriptions: [
-                'Scripting, automation, file handling, and problem solving.',
-                'Procedural programming, control structures, functions, and algorithmic thinking.',
-                'Building static pages, responsive layouts, and using Flexbox.',
-                'Database modeling, table creation, and SELECT / INSERT queries.'
+            overviewTitle: 'Skills carousel',
+            poleTitle: 'Technical area',
+            wheelControls: {
+                pause: 'Pause',
+                auto: 'Auto',
+                prevAria: 'Previous skill',
+                nextAria: 'Next skill'
+            },
+            wheelSkills: [
+                { label: 'C', detail: 'Procedural programming and algorithmic practice on academic projects.' },
+                { label: 'C++', detail: 'Built an Orbitro web game project developed with .NET MAUI.' },
+                { label: 'C#', detail: 'Used with Unity 3D for gameplay logic and interactions.' },
+                { label: 'Java', detail: 'Built a weather application.' },
+                { label: 'Kotlin', detail: 'Contribution to a team-based Android mobile application.' },
+                { label: 'Python', detail: 'Scripting, task automation, and practical problem solving.' },
+                { label: 'SQL', detail: 'Relational design and queries to retrieve and structure data.' }
             ],
-            secondaryCards: {
-                languageTitle: 'Language',
-                languageLevel: 'English - Good working level',
-                languageText: 'Strong written and spoken comprehension, ease in writing, and technical vocabulary in computing.',
-                softSkillsTitle: 'Soft skills',
-                softSkills: [
-                    'Teamwork on multi-person coursework projects',
-                    'Written communication and oral presentations',
-                    'Independence and quick adaptation',
-                    'Technical curiosity and continuous progress'
-                ],
-                toolsTitle: 'Tools already used',
-                toolsText: 'Photoshop, Elementor, development environments for Python/C/SQL, and collaborative office tools.'
+            blocks: {
+                gamesMobile: {
+                    title: 'Games & Mobile',
+                    items: ['Unity 3D (C#)', 'Android Studio']
+                },
+                webDotnet: {
+                    title: 'Web & .NET',
+                    items: ['HTML', 'CSS', 'JavaScript', 'PHP', 'ASP.NET', 'Blazor', '.NET MAUI', 'Entity Framework']
+                },
+                databases: {
+                    title: 'Databases',
+                    items: ['PostgreSQL', 'SQL Server']
+                },
+                uiux: {
+                    title: 'UI / UX',
+                    items: ['Interface design', 'User experience']
+                },
+                tools: {
+                    title: 'Tools',
+                    items: ['Git', 'GitHub']
+                }
             }
         }
     },
@@ -578,24 +608,31 @@ const pageTranslators = {
         const content = pageContent.skills[language];
         document.title = content.title;
         setText('.titre', content.heading);
-        setText('.intro-competences h2', content.overviewTitle);
-        setText('.intro-competences p', content.overviewText);
-        document.querySelectorAll('.pills-cv span').forEach((pill, index) => {
-            pill.textContent = content.pills[index] || '';
+        setText('[data-carousel-title]', content.overviewTitle);
+        setText('[data-pole-title]', content.poleTitle);
+
+        const blockKeys = ['gamesMobile', 'webDotnet', 'databases', 'uiux', 'tools'];
+        blockKeys.forEach((key) => {
+            const block = content.blocks[key];
+            if (!block) {
+                return;
+            }
+
+            setText(`[data-block-title="${key}"]`, block.title);
+            const container = document.querySelector(`[data-block-items="${key}"]`);
+            if (!container) {
+                return;
+            }
+
+            container.innerHTML = '';
+            block.items.forEach((item) => {
+                const pill = document.createElement('span');
+                pill.textContent = item;
+                container.appendChild(pill);
+            });
         });
-        setText('.bloc-tech > h2', content.technicalTitle);
-        document.querySelectorAll('.bloc-tech .skill-row p').forEach((paragraph, index) => {
-            paragraph.textContent = content.technicalDescriptions[index] || '';
-        });
-        setText('.bloc-complementaire .carte-complementaire:nth-of-type(1) h2', content.secondaryCards.languageTitle);
-        setText('.bloc-complementaire .carte-complementaire:nth-of-type(1) h3', content.secondaryCards.languageLevel);
-        setText('.bloc-complementaire .carte-complementaire:nth-of-type(1) p', content.secondaryCards.languageText);
-        setText('.bloc-complementaire .carte-complementaire:nth-of-type(2) h2', content.secondaryCards.softSkillsTitle);
-        document.querySelectorAll('.bloc-complementaire .carte-complementaire:nth-of-type(2) li').forEach((item, index) => {
-            item.textContent = content.secondaryCards.softSkills[index] || '';
-        });
-        setText('.bloc-complementaire .carte-complementaire:nth-of-type(3) h2', content.secondaryCards.toolsTitle);
-        setText('.bloc-complementaire .carte-complementaire:nth-of-type(3) p', content.secondaryCards.toolsText);
+
+        initSkillsCarousel(language);
     },
     education(language) {
         const content = pageContent.education[language];
@@ -875,6 +912,149 @@ function initCarousel(state) {
     showImage(current);
     updateCarouselLanguage(state.language);
     startAutoplay();
+}
+
+function initSkillsCarousel(language) {
+    const carousel = document.querySelector('[data-skills-carousel]');
+    if (!carousel) {
+        return;
+    }
+
+    const content = pageContent.skills[language];
+    if (!content) {
+        return;
+    }
+
+    const skills = content.wheelSkills || [];
+    if (!skills.length) {
+        return;
+    }
+
+    const card = document.querySelector('[data-carousel-card]');
+    const indexElement = document.querySelector('[data-carousel-index]');
+    const totalElement = document.querySelector('[data-carousel-total]');
+    const labelElement = document.querySelector('[data-wheel-label]');
+    const detailElement = document.querySelector('[data-wheel-detail]');
+    const prevBtn = document.querySelector('[data-wheel-prev]');
+    const nextBtn = document.querySelector('[data-wheel-next]');
+    const toggleBtn = document.querySelector('[data-wheel-toggle]');
+
+    if (!card || !labelElement || !detailElement || !prevBtn || !nextBtn || !toggleBtn || !indexElement || !totalElement) {
+        return;
+    }
+
+    prevBtn.setAttribute('aria-label', content.wheelControls.prevAria);
+    nextBtn.setAttribute('aria-label', content.wheelControls.nextAria);
+    prevBtn.setAttribute('title', content.wheelControls.prevAria);
+    nextBtn.setAttribute('title', content.wheelControls.nextAria);
+
+    if (!carousel.dataset.currentIndex) {
+        carousel.dataset.currentIndex = '0';
+    }
+    if (!carousel.dataset.mode) {
+        carousel.dataset.mode = 'auto';
+    }
+
+    function getSafeIndex(index) {
+        const total = skills.length;
+        if (total <= 0) {
+            return 0;
+        }
+        return ((index % total) + total) % total;
+    }
+
+    function render(index, direction = 'next', animate = true) {
+        const safeIndex = getSafeIndex(index);
+        carousel.dataset.currentIndex = String(safeIndex);
+
+        const applyContent = () => {
+            const currentSkill = skills[safeIndex];
+            if (!currentSkill) {
+                return;
+            }
+            if (typeof currentSkill === 'string') {
+                labelElement.textContent = currentSkill;
+                detailElement.textContent = '';
+            } else {
+                labelElement.textContent = currentSkill.label || '';
+                detailElement.textContent = currentSkill.detail || '';
+            }
+            indexElement.textContent = String(safeIndex + 1);
+            totalElement.textContent = String(skills.length);
+        };
+
+        if (!animate) {
+            applyContent();
+            return;
+        }
+
+        card.classList.remove('is-entering-next', 'is-entering-prev', 'is-leaving-next', 'is-leaving-prev');
+        card.classList.add(direction === 'next' ? 'is-leaving-next' : 'is-leaving-prev');
+
+        card.onanimationend = () => {
+            card.classList.remove('is-leaving-next', 'is-leaving-prev');
+            applyContent();
+            card.classList.add(direction === 'next' ? 'is-entering-next' : 'is-entering-prev');
+
+            card.onanimationend = () => {
+                card.classList.remove('is-entering-next', 'is-entering-prev');
+                card.onanimationend = null;
+            };
+        };
+    }
+
+    function updateToggleLabel() {
+        const isAuto = carousel.dataset.mode === 'auto';
+        toggleBtn.textContent = isAuto ? content.wheelControls.pause : content.wheelControls.auto;
+    }
+
+    if (carousel.dataset.initialized !== 'true') {
+        let timerId;
+
+        function stopAuto() {
+            if (timerId) {
+                clearInterval(timerId);
+            }
+            timerId = undefined;
+        }
+
+        function startAuto() {
+            stopAuto();
+            if (carousel.dataset.mode !== 'auto') {
+                return;
+            }
+
+            timerId = setInterval(() => {
+                const current = Number.parseInt(carousel.dataset.currentIndex || '0', 10);
+                render(current + 1, 'next', true);
+            }, 3200);
+        }
+
+        prevBtn.addEventListener('click', () => {
+            const current = Number.parseInt(carousel.dataset.currentIndex || '0', 10);
+            render(current - 1, 'prev', true);
+            startAuto();
+        });
+
+        nextBtn.addEventListener('click', () => {
+            const current = Number.parseInt(carousel.dataset.currentIndex || '0', 10);
+            render(current + 1, 'next', true);
+            startAuto();
+        });
+
+        toggleBtn.addEventListener('click', () => {
+            carousel.dataset.mode = carousel.dataset.mode === 'auto' ? 'manual' : 'auto';
+            updateToggleLabel();
+            startAuto();
+        });
+
+        carousel.dataset.initialized = 'true';
+        carousel.dataset.mode = 'auto';
+        startAuto();
+    }
+
+    updateToggleLabel();
+    render(Number.parseInt(carousel.dataset.currentIndex || '0', 10), 'next', false);
 }
 
 function updateCarouselLanguage(language) {
