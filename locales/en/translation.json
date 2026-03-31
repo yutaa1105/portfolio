@@ -1,0 +1,311 @@
+{
+  "common": {
+    "nav": [
+      "Home",
+      "Skills",
+      "Education",
+      "Projects",
+      "Interests",
+      "Download my resume"
+    ],
+    "footer": "&copy; 2026 Candice Carton. All rights reserved.",
+    "headerToolsAria": "Site preferences",
+    "languageSwitcherAria": "Choose a language",
+    "themeToggleAria": "Toggle theme",
+    "themeToggle": {
+      "light": "Light mode",
+      "dark": "Dark mode"
+    },
+    "carouselDot": "Go to image {{index}}",
+    "lightboxAlt": "Zoomed view",
+    "lightboxCloseAria": "Close viewer",
+    "projectStatus": {
+      "completed": "Completed",
+      "in-progress": "In progress"
+    }
+  },
+  "pages": {
+    "home": {
+      "title": "Portfolio - Candice Carton",
+      "heading": "Candice Carton",
+      "subtitle": "Computer Science Student",
+      "intro": [
+        "As a second-year Computer Science student at the IUT of Clermont-Ferrand, I specialize in web development, database management, and interactive experience design.",
+        "I am looking for a work-study position for my third year, with a strong interest in mobile and web development. Passionate about Japanese culture, anime, and game design, these interests shape my creative perspective and enrich the way I approach interface and user experience design."
+      ],
+      "actions": [
+        "View my technical profile",
+        "Browse my projects",
+        "Contact me"
+      ],
+      "carousel": [
+        {
+          "alt": "Portrait",
+          "label": "Candice - Web and mobile development"
+        },
+        {
+          "alt": "IUT Clermont-Ferrand",
+          "label": "Computer Science degree - IUT Clermont-Ferrand"
+        },
+        {
+          "alt": "Forest mapping project",
+          "label": "Forest mapping project - Livradois-Forez"
+        },
+        {
+          "alt": "Game one-pager",
+          "label": "Video game design - one-pager"
+        },
+        {
+          "alt": "Semester in Canada",
+          "label": "Semester in Canada - UQAC"
+        }
+      ]
+    },
+    "skills": {
+      "title": "Skills - Candice Carton",
+      "heading": "My skills",
+      "overviewTitle": "Skills carousel",
+      "poleTitle": "Technical area",
+      "wheelControls": {
+        "pause": "Pause",
+        "auto": "Auto",
+        "prevAria": "Previous skill",
+        "nextAria": "Next skill"
+      },
+      "wheelSkills": [
+        {
+          "label": "C",
+          "detail": "Procedural programming and algorithmic practice on academic projects."
+        },
+        {
+          "label": "C++",
+          "detail": "Built an Orbitro web game project developed with .NET MAUI."
+        },
+        {
+          "label": "C#",
+          "detail": "Used with Unity 3D for gameplay logic and interactions."
+        },
+        {
+          "label": "Java",
+          "detail": "Built a weather application."
+        },
+        {
+          "label": "Kotlin",
+          "detail": "Contribution to a team-based Android mobile application."
+        },
+        {
+          "label": "Python",
+          "detail": "Scripting, task automation, and practical problem solving."
+        },
+        {
+          "label": "SQL",
+          "detail": "Relational design and queries to retrieve and structure data."
+        }
+      ],
+      "blocks": {
+        "gamesMobile": {
+          "title": "Games & Mobile",
+          "items": [
+            "Unity 3D (C#)",
+            "Android Studio"
+          ]
+        },
+        "webDotnet": {
+          "title": "Web & .NET",
+          "items": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "PHP",
+            "ASP.NET",
+            "Blazor",
+            ".NET MAUI",
+            "Entity Framework"
+          ]
+        },
+        "databases": {
+          "title": "Databases",
+          "items": [
+            "PostgreSQL",
+            "SQL Server"
+          ]
+        },
+        "uiux": {
+          "title": "UI / UX",
+          "items": [
+            "Interface design",
+            "User experience"
+          ]
+        },
+        "tools": {
+          "title": "Tools",
+          "items": [
+            "Git",
+            "GitHub"
+          ]
+        }
+      }
+    },
+    "education": {
+      "title": "Education - Candice Carton",
+      "heading": "My education",
+      "cards": [
+        {
+          "title": "Semester in Canada",
+          "date": "Period: Jan 2026 - Apr 2026",
+          "paragraphs": [
+            "Universite du Quebec a Chicoutimi (UQAC)",
+            "International experience as part of my Computer Science degree.",
+            "Goal: strengthen my technical skills and improve my English in a different academic environment."
+          ],
+          "items": [
+            "Cultural openness and adaptation to a new study environment.",
+            "Greater independence and communication skills."
+          ]
+        },
+        {
+          "title": "Computer Science degree",
+          "date": "Period: Sep 2024 - Jun 2026",
+          "paragraphs": [
+            "IUT of Clermont-Ferrand",
+            "2nd year of the Computer Science degree.",
+            "Deepening my skills in algorithms, development, databases, project management, and teamwork."
+          ],
+          "items": [
+            "More ambitious coursework projects carried out over longer time spans.",
+            "Stronger foundations in Python, C, SQL, and web development with a more professional approach."
+          ]
+        },
+        {
+          "title": "High school",
+          "date": "Period: Sep 2021 - Jun 2024",
+          "paragraphs": [
+            "Jeanne d'Arc high school, Clermont-Ferrand",
+            "Graduated with honors."
+          ],
+          "sectionTitle": "Experience",
+          "items": [
+            "Internship at <a class=\"site\" href=\"https://home.diakse.com/fr_fr/\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Diakse</strong></a>: HTML/CSS resume and page creation with Elementor.",
+            "Internship at <a class=\"site\" href=\"https://www.eramet.com/fr/\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Eramet</strong></a>: discovering cloud concepts and network structures."
+          ],
+          "imageAlt": "Jeanne d'Arc high school"
+        },
+        {
+          "title": "Middle school",
+          "date": "Period: Sep 2018 - Jun 2021",
+          "paragraphs": [
+            "Jean Rostand middle school, Les Martres-de-Veyre",
+            "Graduated with highest honors."
+          ],
+          "sectionTitle": "Work experience in 9th grade - Overscan",
+          "items": [
+            "Digital packaging for medicine boxes.",
+            "Using Photoshop and creating advertising visuals."
+          ],
+          "imageAlt": "Jean Rostand middle school"
+        }
+      ]
+    },
+    "interests": {
+      "title": "Interests - Candice Carton",
+      "heading": "My interests",
+      "sections": [
+        {
+          "title": "Reading",
+          "paragraphs": [
+            "I love reading, whether it is novels, manga, or manhwa. Reading lets me escape, discover new worlds, and enrich my imagination."
+          ]
+        },
+        {
+          "title": "Video games & esports",
+          "paragraphs": [
+            "Video games play an important role in my life. I especially enjoy open-world solo games. I am also very interested in esports for its team spirit, strategy, and the passion shared by players and communities."
+          ]
+        },
+        {
+          "title": "Anime & Films",
+          "paragraphs": [
+            "I am passionate about anime, films, and series. I enjoy discovering Japanese works as well as films from around the world for their creativity and the emotions they convey. Fantasy and science fiction are my favorite genres, but I also enjoy dramas and comedies.",
+            "Some anime left a mark on me because their settings were inspired by real places in Japan. I love recognizing these places in the stories, and I have already been able to visit some of them, such as <strong>Your Name</strong> and <strong>Suzume</strong>."
+          ],
+          "subheading": "Iconic anime locations"
+        },
+        {
+          "title": "Japanese culture",
+          "paragraphs": [
+            "I truly enjoy Japanese cuisine: sushi, ramen, okonomiyaki, mochi, and more. I like discovering new flavors and trying to cook traditional dishes at home. The presentation of the dishes and the balance of flavors are aspects I especially appreciate.",
+            "Japan is also fascinating for its temples, gardens, festivals, and customs. I admire the beauty of Shinto shrines, the serenity of zen gardens, and the richness of traditional celebrations such as Hanami and Tanabata. I had the chance to travel alone in Japan during a language stay with EF Education, which allowed me to discover these cultural aspects firsthand and deepen my interest in the country."
+          ],
+          "subheadings": [
+            "Japanese food",
+            "Culture and traditions"
+          ]
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projects - Candice Carton",
+      "heading": "My projects",
+      "intro": "A snapshot of my academic and personal work, with projects focused on databases, game design, and immersive experiences.",
+      "cards": [
+        {
+          "title": "Livradois-Forez Forest Mapping",
+          "paragraphs": [
+            "This project aims to provide a tree mapping platform for the Livradois-Forez association. The application makes it possible to consult data about tree species and diseases, and to add, edit, or remove entries for field monitoring needs.<br>The team delivered multiple connected outputs: a Kotlin mobile app, a PHP web app, a Blazor admin app, and an API linking all components.<br>I mainly worked on account authentication in PHP and on tree-related data management with EF. My contribution was interrupted mid-project because I left for my semester in Canada.",
+            "Technologies used: Blazor, PHP, Entity Framework, ASP.NET, Kotlin."
+          ],
+          "captions": [
+            "Mapping interface preview"
+          ]
+        },
+        {
+          "title": "VR project",
+          "paragraphs": [
+            "This project is being developed by a team of five in Unity3D, as an immersive experience focused on atmosphere and exploration.<br>At this stage, the environments are built and the implementation of interactive scene elements is in progress.<br>The core mechanics already defined include teleportation, interactions with environment objects, and events triggered at key moments of the player journey.",
+            "Technologies used: Unity3D."
+          ],
+          "captions": [
+            "Environment and mood preview",
+            "Teleportation and interactions preview",
+            "Scripted events preview"
+          ]
+        },
+        {
+          "title": "VR weather station connected to an API",
+          "paragraphs": [
+            "Built in Unity as a functional prototype, this project focused on consuming weather data from an API and displaying it inside a VR environment.<br>The visual form was not the priority. The key objective was readable weather information rendered in-scene, especially on a television in a virtual living room.<br>The final result validates an end-to-end integration between Unity and the API with dynamic weather updates in 3D.",
+            "Technologies used: Unity3D, weather API (HTTP/JSON requests)."
+          ],
+          "captions": [
+            "VR living room overview",
+            "Weather shown on the TV",
+            "Weather data variation",
+            "Final integrated prototype"
+          ]
+        },
+        {
+          "title": "Video game design project",
+          "paragraphs": [
+            "This is a solo video game design project built around <strong>Yume no Fukushuu</strong>, imagined as an action-adventure experience for PC and consoles.<br>The objective was to design a complete concept and formalize it in a clear one-pager. The project also includes an original lore that is more detailed than what appears in the summary document.<br>The concept features 5 main bosses and focuses on strong consistency between narrative, worldbuilding, and gameplay intentions.",
+            "Final deliverable: one-pager."
+          ],
+          "moreInfo": "More information",
+          "captions": [
+            "Project one-pager"
+          ]
+        }
+      ]
+    },
+    "lore": {
+      "title": "Detailed lore - Yume no Fukushuu",
+      "heading": "Detailed lore - Yume no Fukushuu",
+      "intro": "Complete presentation of the Yume no Fukushuu project.",
+      "back": "Back to projects",
+      "previous": "Previous page",
+      "next": "Next page",
+      "openPdf": "Open full PDF",
+      "hint": "Tip: use left/right arrow keys to navigate quickly.",
+      "indicator": "Page {{current}} / {{total}}"
+    }
+  }
+}

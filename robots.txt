@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://codefirst.iut.uca.fr/candice.carton/portfolio/sitemap.xml

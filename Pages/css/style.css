@@ -47,6 +47,11 @@ COMMUN A TOUTES LES PAGES
     --footer-text: #f8fafb;
     --lightbox-bg: rgba(0, 0, 0, 0.75);
     --lightbox-image-bg: #ffffff;
+    
+    /* Neon effects for light and dark modes */
+    --neon-red: #E85D5D;
+    --neon-purple: #C084FC;
+    --neon-orange: #F97316;
 }
 
 [data-theme="dark"] {
@@ -357,6 +362,11 @@ header {
     transform: translateY(-1px);
 }
 
+:where(a, button, .dot, .tool-btn):focus-visible {
+    outline: 2px solid var(--accent-500);
+    outline-offset: 2px;
+}
+
 .tool-btn.active {
     background: linear-gradient(135deg, rgba(201, 169, 97, 0.94), rgba(167, 133, 64, 0.94));
     border-color: rgba(255, 245, 219, 0.28);
@@ -378,7 +388,6 @@ header {
     font-family: var(--font-display);
     display: inline-block;
     color: var(--title-color);
-    padding-bottom: 1.2em;
     font-size: 2.2em;
     text-align: center;
     margin: 0 auto; 
@@ -388,18 +397,23 @@ header {
     letter-spacing: -0.5px;
     animation: fadeInUp 0.6s ease-out;
     position: relative;
+    text-decoration: none;
+    border: none;
+    padding: 0;
 }
 
 .titre::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
     width: 80px;
     height: 3px;
     background: linear-gradient(90deg, transparent, var(--accent-500), transparent);
     border-radius: 2px;
+    display: block;
+    box-shadow: none;
 }
 
 
@@ -431,6 +445,8 @@ h1 {
     color: var(--text-900);
     margin-top: 60px;
     margin-bottom: 30px;
+    text-decoration: none;
+    border-bottom: none;
 }
 
 h2 {

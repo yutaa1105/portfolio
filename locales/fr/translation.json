@@ -1,0 +1,312 @@
+﻿{
+  "common": {
+    "nav": [
+      "Accueil",
+      "Compétences",
+      "Cursus",
+      "Projets",
+      "Centres d'intérêt",
+      "Télécharger mon CV"
+    ],
+    "footer": "&copy; 2026 Candice Carton. Tous droits réservés.",
+    "headerToolsAria": "Préférences du site",
+    "languageSwitcherAria": "Choisir la langue",
+    "themeToggleAria": "Changer le thème",
+    "themeToggle": {
+      "light": "Mode clair",
+      "dark": "Mode sombre"
+    },
+    "carouselDot": "Aller à l'image {{index}}",
+    "lightboxAlt": "Agrandissement",
+    "lightboxCloseAria": "Fermer la visionneuse",
+    "projectStatus": {
+      "completed": "Fini",
+      "in-progress": "En cours"
+    }
+  },
+  "pages": {
+    "home": {
+      "title": "Portfolio - Candice Carton",
+      "heading": "Candice Carton",
+      "subtitle": "Étudiante en BUT Informatique",
+      "intro": [
+        "Étudiante en deuxième année de BUT Informatique à l'IUT de Clermont-Ferrand, je me spécialise dans le développement web, la gestion de bases de données et la conception d'expériences interactives.",
+        "Je recherche une alternance pour ma 3e année, avec un intérêt marqué pour le développement mobile et web. Passionnée par la culture japonaise, les animés et le game design, ces univers influencent ma sensibilité créative et enrichissent ma façon d'aborder la conception d'interfaces et d'expériences utilisateur."
+      ],
+      "actions": [
+        "Voir mon profil technique",
+        "Consulter mes projets",
+        "Me contacter"
+      ],
+      "carousel": [
+        {
+          "alt": "Portrait",
+          "label": "Candice - Développement web et mobile"
+        },
+        {
+          "alt": "IUT Clermont-Ferrand",
+          "label": "BUT Informatique - IUT Clermont-Ferrand"
+        },
+        {
+          "alt": "Projet cartographie",
+          "label": "Projet cartographie forestière - Livradois-Forez"
+        },
+        {
+          "alt": "One-pager de projet",
+          "label": "Conception de jeu vidéo - one-pager"
+        },
+        {
+          "alt": "Semestre au Canada",
+          "label": "Semestre au Canada - UQAC"
+        }
+      ]
+    },
+    "skills": {
+      "title": "Compétences - Candice Carton",
+      "heading": "Mes compétences",
+      "overviewTitle": "Carrousel de compétences",
+      "poleTitle": "Pôle technique",
+      "wheelControls": {
+        "pause": "Pause",
+        "auto": "Auto",
+        "prevAria": "Compétence précédente",
+        "nextAria": "Compétence suivante"
+      },
+      "wheelSkills": [
+        {
+          "label": "C",
+          "detail": "Programmation procédurale et algorithmique sur des projets académiques."
+        },
+        {
+          "label": "C++",
+          "detail": "Réalisation d'un projet Orbitro en jeu web, développé en .NET MAUI."
+        },
+        {
+          "label": "C#",
+          "detail": "Utilisé avec Unity 3D pour la logique gameplay et interactions."
+        },
+        {
+          "label": "Java",
+          "detail": "Réalisation d'une application de météo."
+        },
+        {
+          "label": "Kotlin",
+          "detail": "Participation à une application mobile Android en équipe."
+        },
+        {
+          "label": "Python",
+          "detail": "Scripts, automatisation de tâches et résolution de problèmes."
+        },
+        {
+          "label": "SQL",
+          "detail": "Conception relationnelle et requêtes pour interroger les données."
+        }
+      ],
+      "blocks": {
+        "gamesMobile": {
+          "title": "Jeux & Mobile",
+          "items": [
+            "Unity 3D (C#)",
+            "Android Studio"
+          ]
+        },
+        "webDotnet": {
+          "title": "Web & .NET",
+          "items": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "PHP",
+            "ASP.NET",
+            "Blazor",
+            ".NET MAUI",
+            "Entity Framework"
+          ]
+        },
+        "databases": {
+          "title": "Bases de données",
+          "items": [
+            "PostgreSQL",
+            "SQL Server"
+          ]
+        },
+        "uiux": {
+          "title": "UI / UX",
+          "items": [
+            "Conception d'interfaces",
+            "Expérience utilisateur"
+          ]
+        },
+        "tools": {
+          "title": "Outils",
+          "items": [
+            "Git",
+            "GitHub"
+          ]
+        }
+      }
+    },
+    "education": {
+      "title": "Cursus scolaire",
+      "heading": "Mon cursus scolaire",
+      "cards": [
+        {
+          "title": "Semestre au Canada",
+          "date": "Période : janv. 2026 - avr. 2026",
+          "paragraphs": [
+            "Université du Québec à Chicoutimi (UQAC)",
+            "Expérience internationale dans le cadre du BUT Informatique.",
+            "Objectif : approfondir les compétences techniques et renforcer l'anglais dans un environnement académique différent."
+          ],
+          "items": [
+            "Ouverture culturelle et adaptation à un nouveau cadre d'études.",
+            "Développement de l'autonomie et de la communication."
+          ]
+        },
+        {
+          "title": "BUT Informatique",
+          "date": "Période : sept. 2024 - juin 2026",
+          "paragraphs": [
+            "IUT de Clermont-Ferrand",
+            "2e année de BUT Informatique.",
+            "Approfondissement des compétences en algorithmique, développement, bases de données, gestion de projet et travail en équipe."
+          ],
+          "items": [
+            "Projets de SAE plus complets, menés sur des volumes horaires plus importants.",
+            "Renforcement des bases en Python, C, SQL et développement web, avec une approche plus professionnalisante."
+          ]
+        },
+        {
+          "title": "Lycée",
+          "date": "Période : sept. 2021 - juin 2024",
+          "paragraphs": [
+            "Lycée Jeanne d'Arc, Clermont-Ferrand",
+            "Obtention du bac avec <em>mention bien</em>."
+          ],
+          "sectionTitle": "Expériences",
+          "items": [
+            "Stage chez <a class=\"site\" href=\"https://home.diakse.com/fr_fr/\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Diakse</strong></a> : CV en HTML/CSS et création de page avec Elementor.",
+            "Stage chez <a class=\"site\" href=\"https://www.eramet.com/fr/\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Eramet</strong></a> : découverte du cloud et des structures réseaux."
+          ],
+          "imageAlt": "Lycée Jeanne d'Arc"
+        },
+        {
+          "title": "Collège",
+          "date": "Période : sept. 2018 - juin 2021",
+          "paragraphs": [
+            "Collège Jean Rostand, Les Martres-de-Veyre",
+            "Obtention du brevet avec <em>mention très bien</em>."
+          ],
+          "sectionTitle": "Stage de troisième - Overscan",
+          "items": [
+            "Packaging numérique de boîtes de médicaments.",
+            "Utilisation de Photoshop et création de visuels publicitaires."
+          ],
+          "imageAlt": "Collège Jean Rostand"
+        }
+      ]
+    },
+    "interests": {
+      "title": "Centres d'intérêt - Candice Carton",
+      "heading": "Mes centres d'intérêt",
+      "sections": [
+        {
+          "title": "Lecture",
+          "paragraphs": [
+            "J'adore lire, que ce soit des romans, des mangas ou des manhwas (version coréenne des mangas). La lecture me permet de m'évader, de découvrir de nouveaux univers et d'enrichir mon imagination."
+          ]
+        },
+        {
+          "title": "Jeux vidéo & esport",
+          "paragraphs": [
+            "Les jeux vidéo occupent une place importante dans ma vie. J'apprécie particulièrement les jeux solo en monde ouvert. L'esport m'intéresse aussi beaucoup pour l'esprit d'équipe, la stratégie et la passion qui animent les joueurs et les communautés."
+          ]
+        },
+        {
+          "title": "Animés & Films",
+          "paragraphs": [
+            "Je suis passionnée par les animés, les films et séries. J'aime découvrir des œuvres japonaises, mais aussi des films du monde entier, pour leur créativité et les émotions qu'ils procurent. Le genre fantastique et la science-fiction sont mes préférés, mais j'apprécie aussi les drames et les comédies.",
+            "Certains animés m'ont marquée par leurs décors inspirés de lieux réels au Japon. J'adore retrouver ces endroits dans les œuvres et j'ai déjà pu en visiter certains, comme <strong>Your Name</strong> ou <strong>Suzume</strong> !"
+          ],
+          "subheading": "Lieux cultes d'anime"
+        },
+        {
+          "title": "Culture japonaise",
+          "paragraphs": [
+            "J'apprécie énormément la gastronomie japonaise : sushi, ramen, okonomiyaki, mochi... J'aime découvrir de nouvelles saveurs et essayer de cuisiner des plats traditionnels chez moi. La présentation des plats et les saveurs de ceux-ci sont des aspects que j'apprécie particulièrement.",
+            "Le Japon est aussi fascinant pour ses temples, ses jardins, ses festivals et ses coutumes. J'admire la beauté des sanctuaires shinto, la sérénité des jardins zen, et la richesse des fêtes traditionnelles comme le Hanami ou le Tanabata. J'ai eu la chance de voyager seule au Japon dans le cadre d'un séjour linguistique avec EF Education, ce qui m'a permis de découvrir ces aspects culturels de près et de renforcer mon intérêt pour ce pays."
+          ],
+          "subheadings": [
+            "La nourriture japonaise",
+            "La culture et les traditions"
+          ]
+        }
+      ]
+    },
+    "projects": {
+      "title": "Réalisations - Candice Carton",
+      "heading": "Mes réalisations",
+      "intro": "Un aperçu de mes réalisations académiques et personnelles, avec des projets orientés base de données, game design et expériences immersives.",
+      "cards": [
+        {
+          "title": "Cartographie forestière du Livradois-Forez",
+          "paragraphs": [
+            "Ce projet vise à fournir une cartographie des arbres pour l'association du Livradois-Forez. L'application permet de consulter les informations liées aux essences et aux maladies, puis d'ajouter, modifier ou supprimer des entrées selon les besoins du suivi terrain.<br>Le travail d'équipe a abouti à plusieurs livrables complémentaires : une application mobile en Kotlin, une application web en PHP, une application d'administration en Blazor et une API pour relier l'ensemble.<br>J'ai principalement travaillé sur le système de connexion des comptes côté PHP ainsi que sur la gestion des données relatives aux arbres en EF. Ma contribution a été interrompue en cours de projet en raison de mon départ pour le semestre au Canada.",
+            "Technologies utilisées : Blazor, PHP, Entity Framework, ASP.NET, Kotlin."
+          ],
+          "captions": [
+            "Aperçu de l'interface de cartographie"
+          ]
+        },
+        {
+          "title": "Projet VR",
+          "paragraphs": [
+            "Projet réalisé en groupe de 5 sous Unity3D, autour d'une expérience immersive orientée ambiance et exploration.<br>À ce stade, les décors sont créés et la mise en place des éléments interactifs est en cours d'implémentation dans la scène.<br>Les mécaniques principales déjà définies sont la téléportation, les interactions avec des éléments du décor et des événements déclenchés à des moments clés du parcours joueur.",
+            "Technologies utilisées : Unity3D."
+          ],
+          "captions": [
+            "Décor et ambiance",
+            "Téléportation et interactions",
+            "Événements scénarisés"
+          ]
+        },
+        {
+          "title": "Station météo VR connectée à une API",
+          "paragraphs": [
+            "Projet réalisé sous Unity avec une logique orientée prototype fonctionnel : l'objectif principal était de récupérer des données météo via une API puis de les afficher dans un environnement VR.<br>La partie visuelle était volontairement secondaire. L'information météo devait surtout être lisible et visible dans la scène, notamment sur une télévision placée dans un salon virtuel.<br>Le résultat final permet d'afficher dynamiquement les données météo dans l'univers 3D et de valider l'intégration bout en bout entre Unity et l'API.",
+            "Technologies utilisées : Unity3D, API météo (requêtes HTTP/JSON)."
+          ],
+          "captions": [
+            "Vue générale du salon VR",
+            "Affichage météo sur la télévision",
+            "Variation des informations météo",
+            "Prototype final intégré à la scène"
+          ]
+        },
+        {
+          "title": "Projet de conception de jeu vidéo",
+          "paragraphs": [
+            "Projet solo de conception de jeu vidéo autour de <strong>Yume no Fukushuu</strong>, pensé comme une expérience d'action-aventure sur PC et consoles.<br>L'objectif était d'imaginer un concept complet et de le formaliser dans un one-pager clair. Le projet comprend également tout un lore original, plus détaillé que ce qui est présenté dans le document de synthèse.<br>Le concept intègre 5 boss principaux et met l'accent sur la cohérence entre narration, univers et intentions de gameplay.",
+            "Livrable réalisé : one-pager."
+          ],
+          "moreInfo": "Plus d'informations",
+          "captions": [
+            "One-pager du projet"
+          ]
+        }
+      ]
+    },
+    "lore": {
+      "title": "Lore détaillée - Yume no Fukushuu",
+      "heading": "Lore détaillée - Yume no Fukushuu",
+      "intro": "Présentation complète du projet Yume no Fukushuu.",
+      "back": "Retour aux projets",
+      "previous": "Page précédente",
+      "next": "Page suivante",
+      "openPdf": "Ouvrir le PDF complet",
+      "hint": "Astuce : touches flèche gauche/droite pour naviguer rapidement.",
+      "indicator": "Page {{current}} / {{total}}"
+    }
+  }
+}
+

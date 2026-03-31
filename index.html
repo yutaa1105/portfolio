@@ -1,13 +1,22 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
         <title>Portfolio - Candice Carton</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Portfolio de Candice Carton, étudiante en BUT Informatique à Clermont-Ferrand : projets, compétences, parcours et centres d'intérêt.">
+        <link rel="icon" type="image/jpeg" href="images/logos/favicon.jpg?v=2">
+        <link rel="shortcut icon" href="images/logos/favicon.jpg?v=2">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+        <script>
+            (function () {
+                const storedTheme = localStorage.getItem('portfolio-theme');
+                const theme = storedTheme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+                document.documentElement.setAttribute('data-theme', theme);
+            }());
+        </script>
         <link type="text/css" rel="stylesheet" href="Pages/css/index.css">
         <link type="text/css" rel="stylesheet" href="Pages/css/style.css">
     </head>
@@ -47,11 +56,11 @@
                         <button class="carrousel-btn" id="prev">&#10094;</button>
                         <div class="carrousel-panel">
                             <div class="carrousel-images">
-                                <img src="photo/photoProfil.png" alt="Portrait" class="carrousel-img active" data-label="Candice - Développement web et mobile">
-                                <img src="photo/BUT.jpg" alt="IUT Clermont-Ferrand" class="carrousel-img" data-label="BUT Informatique - IUT Clermont-Ferrand">
-                                <img src="photo/CartographieForestière.png" alt="Projet cartographie" class="carrousel-img" data-label="Projet cartographie forestière - Livradois-Forez">
-                                <img src="photo/Onepager.png" alt="One-pager de projet" class="carrousel-img" data-label="Conception de jeu vidéo - one-pager">
-                                <img src="photo/uqac.jpg" alt="Semestre au Canada" class="carrousel-img" data-label="Semestre au Canada - UQAC">
+                                <img src="images/home/photoProfil.png" alt="Portrait" class="carrousel-img active" data-label="Candice - Développement web et mobile">
+                                <img src="images/education/BUT.jpg" alt="IUT Clermont-Ferrand" class="carrousel-img" data-label="BUT Informatique - IUT Clermont-Ferrand">
+                                <img src="images/projects/CartographieForestière.png" alt="Projet cartographie" class="carrousel-img" data-label="Projet cartographie forestière - Livradois-Forez">
+                                <img src="images/projects/Onepager.png" alt="One-pager de projet" class="carrousel-img" data-label="Conception de jeu vidéo - one-pager">
+                                <img src="images/education/uqac.jpg" alt="Semestre au Canada" class="carrousel-img" data-label="Semestre au Canada - UQAC">
                             </div>
                             <p id="carrousel-caption" class="carrousel-caption">Candice - Développement web et mobile</p>
                             <div class="carrousel-dots" id="carrousel-dots"></div>
@@ -64,17 +73,25 @@
         <!-- Footer -->
 		<footer>
 			<div class="footer-content">
-                <p>&copy; 2026 Candice Carton. Tous droits réservés.</p>
+                <p class="footer-text">&copy; 2026 Candice Carton. Tous droits réservés.</p>
 				<div class="social-icons">
 					<a href="https://www.linkedin.com/in/candice-carton-317598267" target="_blank" rel="noopener noreferrer">
-                        <img class="reseaux" src="photo/linkedin-blue.svg" alt="LinkedIn">
+                        <img class="reseaux" src="images/social/linkedin-blue.svg" alt="LinkedIn">
 					</a>
-					<a href="mailto:candice.carton63@gmail.com" target="_blank" rel="noopener noreferrer">
-                        <img class="reseaux" src="photo/mail-blue.svg" alt="Email">
+					<a href="mailto:candice.carton63@gmail.com" rel="noopener noreferrer">
+                        <img class="reseaux" src="images/social/mail-blue.svg" alt="Email">
 					</a>
 				</div>
 			</div>
 		</footer>
-	<script src="Pages/scripts.js" crossorigin="anonymous"></script>
+        <div id="lightbox" style="display:none;">
+                <span id="lightbox-close">&times;</span>
+                <img id="lightbox-img" src="" alt="Agrandissement">
+        </div>
+    <script src="https://unpkg.com/i18next@23.16.8/dist/umd/i18next.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/i18next-http-backend@2.6.2/i18nextHttpBackend.min.js" crossorigin="anonymous"></script>
+    <script src="Pages/scripts.js" crossorigin="anonymous"></script>
     </body>
 </html>
+
+

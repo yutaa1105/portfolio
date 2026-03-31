@@ -1,13 +1,22 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 	<head>
 		<meta charset="UTF-8">
 		<title>Cursus - Candice Carton</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Parcours scolaire de Candice Carton : collège, lycée, BUT Informatique et expérience internationale au Canada.">
+		<link rel="icon" type="image/jpeg" href="../images/logos/favicon.jpg?v=2">
+		<link rel="shortcut icon" href="../images/logos/favicon.jpg?v=2">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+		<script>
+			(function () {
+				const storedTheme = localStorage.getItem('portfolio-theme');
+				const theme = storedTheme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+				document.documentElement.setAttribute('data-theme', theme);
+			}());
+		</script>
 		<link type="text/css" rel="stylesheet" href="css/style.css">
 		<link type="text/css" rel="stylesheet" href="css/cursus.css">
 	</head>
@@ -32,7 +41,7 @@
 						<h2>Semestre au Canada</h2>
 						<p class="etape-date">Période : janv. 2026 - avr. 2026</p>
 						<p class="etape-etablissement">Université du Québec à Chicoutimi (UQAC)</p>
-						<img class="etape-image" src="../photo/uqac.jpg" alt="Université du Québec à Chicoutimi">
+								<img class="etape-image" src="../images/education/uqac.jpg" alt="Université du Québec à Chicoutimi">
 						<p>Expérience internationale dans le cadre du BUT Informatique.</p>
 						<p>Objectif : approfondir les compétences techniques et renforcer l'anglais dans un environnement académique différent.</p>
 						<ul>
@@ -47,7 +56,7 @@
 						<h2>BUT Informatique</h2>
 						<p class="etape-date">Période : sept. 2024 - juin 2026</p>
 						<p class="etape-etablissement">IUT de Clermont-Ferrand</p>
-						<img class="etape-image" src="../photo/BUT.jpg" alt="IUT de Clermont-Ferrand">
+								<img class="etape-image" src="../images/education/BUT.jpg" alt="IUT de Clermont-Ferrand">
 						<p>2e année de BUT Informatique.</p>
 						<p>Approfondissement des compétences en algorithmique, développement, bases de données, gestion de projet et travail en équipe.</p>
 						<ul>
@@ -62,7 +71,7 @@
 						<h2>Lycée</h2>
 						<p class="etape-date">Période : sept. 2021 - juin 2024</p>
 						<p class="etape-etablissement">Lycée Jeanne d'Arc, Clermont-Ferrand</p>
-						<img class="etape-image" src="../photo/Lycee.jpg" alt="Lycée Jeanne d'Arc">
+								<img class="etape-image" src="../images/education/Lycee.jpg" alt="Lycée Jeanne d'Arc">
 						<p>Obtention du bac avec <em>mention bien</em>.</p>
 						<h3>Expériences</h3>
 						<ul>
@@ -77,7 +86,7 @@
 						<h2>Collège</h2>
 						<p class="etape-date">Période : sept. 2018 - juin 2021</p>
 						<p class="etape-etablissement">Collège Jean Rostand, Les Martres-de-Veyre</p>
-						<img class="etape-image" src="../photo/JR.jpg" alt="Collège Jean Rostand">
+								<img class="etape-image" src="../images/education/JR.jpg" alt="Collège Jean Rostand">
 						<p>Obtention du brevet avec <em>mention très bien</em>.</p>
 						<h3>Stage de troisième - <a class="site" href="https://overscan.fr/" target="_blank" rel="noopener noreferrer"><strong>Overscan</strong></a></h3>
 						<ul>
@@ -90,17 +99,20 @@
 		</main>
 		<footer>
 			<div class="footer-content">
-				<p>&copy; 2026 Candice Carton. Tous droits réservés.</p>
+				<p class="footer-text">&copy; 2026 Candice Carton. Tous droits réservés.</p>
 				<div class="social-icons">
 					<a href="https://www.linkedin.com/in/candice-carton-317598267" target="_blank" rel="noopener noreferrer">
-						<img class="reseaux" src="../photo/linkedin-blue.svg" alt="LinkedIn">
+						<img class="reseaux" src="../images/social/linkedin-blue.svg" alt="LinkedIn">
 					</a>
-					<a href="mailto:candice.carton63@gmail.com" target="_blank" rel="noopener noreferrer">
-						<img class="reseaux" src="../photo/mail-blue.svg" alt="Email">
+					<a href="mailto:candice.carton63@gmail.com" rel="noopener noreferrer">
+						<img class="reseaux" src="../images/social/mail-blue.svg" alt="Email">
 					</a>
 				</div>
 			</div>
 		</footer>
+		<script src="https://unpkg.com/i18next@23.16.8/dist/umd/i18next.min.js" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/i18next-http-backend@2.6.2/i18nextHttpBackend.min.js" crossorigin="anonymous"></script>
 		<script src="scripts.js" crossorigin="anonymous"></script>
 	</body>
 </html>
+

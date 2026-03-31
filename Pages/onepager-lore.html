@@ -1,42 +1,51 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Lore detaille - Yume no Fukushuu</title>
+    <title>Lore détaillée - Yume no Fukushuu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Presentation detaillee du lore de Yume no Fukushuu avec navigation par pages.">
+    <meta name="description" content="Présentation détaillée du lore de Yume no Fukushuu avec navigation par pages.">
+    <link rel="icon" type="image/jpeg" href="../images/logos/favicon.jpg?v=2">
+    <link rel="shortcut icon" href="../images/logos/favicon.jpg?v=2">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+    <script>
+        (function () {
+            const storedTheme = localStorage.getItem('portfolio-theme');
+            const theme = storedTheme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        }());
+    </script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/onepager-lore.css">
 </head>
-<body data-page="onepagerLore">
+<body data-page="lore">
     <header>
         <nav class="menu">
             <a href="../index.html">Accueil</a>
-            <a href="competences.html">Competences</a>
+            <a href="competences.html">Compétences</a>
             <a href="cursus.html">Cursus</a>
             <a class="active" aria-current="page" href="projets.html">Projets</a>
-            <a href="centresInteret.html">Centres d'interet</a>
-            <a href="CV.pdf" download="Candice-Carton-CV.pdf" target="_blank" rel="noopener noreferrer">Telecharger mon CV</a>
+            <a href="centresInteret.html">Centres d'intérêt</a>
+            <a href="CV.pdf" download="Candice-Carton-CV.pdf" target="_blank" rel="noopener noreferrer">Télécharger mon CV</a>
         </nav>
     </header>
 
     <main class="lore-page">
         <a class="lore-back-link" href="projets.html">Retour aux projets</a>
-        <h1 class="titre">Lore detaille - Yume no Fukushuu</h1>
+        <h1 class="titre">Lore détaillée - Yume no Fukushuu</h1>
 
         <section class="lore-viewer-card" aria-label="Visionneuse du diaporama">
             <div class="lore-toolbar">
-                <button id="lore-prev" type="button" class="lore-nav-btn" aria-label="Page precedente">&#10094;</button>
+                <button id="lore-prev" type="button" class="lore-nav-btn" aria-label="Page précédente">&#10094;</button>
                 <p class="lore-page-indicator" id="lore-page-indicator">Page 1 / 10</p>
                 <button id="lore-next" type="button" class="lore-nav-btn" aria-label="Page suivante">&#10095;</button>
-                <a class="lore-open-pdf" href="../photo/Lore.pdf" target="_blank" rel="noopener noreferrer">Ouvrir le PDF complet</a>
+                <a class="lore-open-pdf" href="../Pages/lore.pdf" target="_blank" rel="noopener noreferrer">Ouvrir le PDF complet</a>
             </div>
 
             <div class="lore-carousel-wrapper" id="lore-carousel-wrapper" data-total-pages="10">
-                <img id="lore-carousel-image" src="../photo/lore1.png" alt="Page 1 du lore Yume no Fukushuu" loading="lazy">
+                <img id="lore-carousel-image" src="../images/lore/lore1.png" alt="Page 1 du lore Yume no Fukushuu" loading="lazy">
             </div>
 
             <div class="lore-carousel-dots" id="lore-carousel-dots" aria-label="Navigation des pages du lore"></div>
@@ -45,13 +54,13 @@
 
     <footer>
         <div class="footer-content">
-            <p class="footer-text">&copy; 2026 Candice Carton. Tous droits reserves.</p>
+            <p class="footer-text">&copy; 2026 Candice Carton. Tous droits réservés.</p>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/candice-carton-317598267" target="_blank" rel="noopener noreferrer">
-                    <img class="reseaux" src="../photo/linkedin-blue.svg" alt="LinkedIn">
+                    <img class="reseaux" src="../images/social/linkedin-blue.svg" alt="LinkedIn">
                 </a>
-                <a href="mailto:candice.carton63@gmail.com" target="_blank" rel="noopener noreferrer">
-                    <img class="reseaux" src="../photo/mail-blue.svg" alt="Email">
+                <a href="mailto:candice.carton63@gmail.com" rel="noopener noreferrer">
+                    <img class="reseaux" src="../images/social/mail-blue.svg" alt="Email">
                 </a>
             </div>
         </div>
@@ -62,6 +71,10 @@
         <img id="lightbox-img" src="" alt="Agrandissement">
     </div>
 
+    <script src="https://unpkg.com/i18next@23.16.8/dist/umd/i18next.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/i18next-http-backend@2.6.2/i18nextHttpBackend.min.js" crossorigin="anonymous"></script>
     <script src="scripts.js" crossorigin="anonymous"></script>
 </body>
 </html>
+
+

@@ -1,5 +1,30 @@
 /* PAGE INDEX.HTML */
 
+body[data-page="home"] .titre {
+    margin-bottom: 2.5rem;
+    border-bottom: none !important;
+    text-decoration: none !important;
+    text-decoration-line: none;
+    outline: none;
+}
+
+body[data-page="home"] .sous-titre {
+    margin: 0 auto 1.35rem;
+    text-align: center;
+    color: var(--text-700);
+    font-family: var(--font-base);
+    font-size: 1.08rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    max-width: 40ch;
+    position: relative;
+}
+
+body[data-page="home"] .sous-titre::before {
+    content: '';
+    display: none;
+}
+
 .apropos-flex {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
@@ -220,6 +245,11 @@
 }
 
 @media (max-width: 600px) {
+    body[data-page="home"] .sous-titre {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
     .carrousel-images {
         height: 220px;
     }

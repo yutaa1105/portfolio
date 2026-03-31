@@ -39,12 +39,12 @@
 }
 
 [data-theme="dark"] .lore-back-link {
-    color: #fff4d8;
+    color: var(--text-900);
     background: rgba(201, 169, 97, 0.2);
 }
 
 [data-theme="dark"] .lore-back-link:hover {
-    color: #fff4d8;
+    color: var(--text-900);
     background: rgba(201, 169, 97, 0.34);
 }
 
@@ -102,8 +102,8 @@
     border-radius: 12px;
     text-decoration: none;
     font-weight: 700;
-    color: #F3F0FF;
-    background: linear-gradient(140deg, #E85D5D, #C084FC);
+    color: #ffffff;
+    background: linear-gradient(140deg, var(--neon-red), var(--neon-purple));
 }
 
 .lore-open-pdf:hover {
