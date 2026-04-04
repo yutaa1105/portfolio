@@ -185,9 +185,9 @@ body[data-page="home"] .sous-titre::before {
 }
 
 .dot.active {
-    background: linear-gradient(135deg, #E85D5D, #C084FC);
+    background: var(--accent-500);
     transform: scale(1.35);
-    box-shadow: 0 4px 10px rgba(232, 93, 93, 0.5);
+    box-shadow: 0 0 10px rgba(201, 169, 97, 0.35);
 }
 
 .carrousel-btn {

@@ -1,0 +1,35 @@
+# Version control
+.git/
+.gitignore
+.gitattributes
+
+# Docker itself
+docker/
+.dockerignore
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS artefacts
+.DS_Store
+Thumbs.db
+
+# Secrets / credentials (never in the image)
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+
+# Dev / CI artefacts
+node_modules/
+*.log
+*.tmp
+
+# Documentation (optional – remove if you want README in the image)
+README.md

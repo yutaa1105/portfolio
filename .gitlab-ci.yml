@@ -1,0 +1,53 @@
+stages:
+  - build
+  - push
+  - deploy
+  - sonar
+
+include:
+  - project: 'iut_inf63/generic-ci'
+    ref: 'main'
+    file:
+      - 'build/.docker-build.yml'
+      - 'deploy/.docker-deploy.yml'
+
+push-image:
+  extends: .build-and-push-docker-image
+  stage: push
+  variables:
+    DOCKERFILE_RELATIVE_PATH: docker/Dockerfile
+    DOCKERFILE_CONTEXT_PATH: .
+    DESTINATION_REGISTRY_IMAGE_NAME: codefirst.iut.uca.fr/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME
+    DESTINATION_REGISTRY_IMAGE_VERSION: main
+  allow_failure: true
+  when: on_success
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "push"
+
+deploy-image:
+  extends: .deploy-image
+  stage: deploy
+  variables:
+    CONTAINER_NAME: $CI_PROJECT_NAME
+    CONTAINER_HTTP_PORT: 80
+    CONTAINER_IMAGE_PATH: codefirst.iut.uca.fr/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME:main
+    NAMESPACE_TOKEN: $KUBE_NAMESPACE_TOKEN
+    NAMESPACE_NAME: $CI_PROJECT_NAMESPACE
+  allow_failure: true
+  needs:
+    - push-image
+
+sonar-analysis:
+  stage: sonar
+  image: sonarsource/sonar-scanner-cli:latest
+  variables:
+    SONAR_USER_HOME: "${CI_PROJECT_DIR}/.sonar"
+  script:
+    - sonar-scanner
+      -Dsonar.projectKey=$CI_PROJECT_NAME
+      -Dsonar.sources=.
+      -Dsonar.host.url=$SONAR_HOST
+      -Dsonar.token=$SONAR_TOKEN
+  allow_failure: true
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "push"

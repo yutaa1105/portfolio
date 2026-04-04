@@ -144,61 +144,16 @@ COMMUN A TOUTES LES PAGES
     transform: translateY(0);
 }
 
-.custom-cursor-dot,
-.custom-cursor-ring {
-    position: fixed;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    z-index: 100001;
-    opacity: 0;
-    transition: opacity 0.2s ease, transform 0.15s ease;
-}
-
-.custom-cursor-dot,
-.custom-cursor-ring {
-    display: none !important;
-}
-
-.custom-cursor-dot {
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background: rgba(31, 47, 63, 0.88);
-    box-shadow: none;
-}
-
-.custom-cursor-ring {
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    border: 1px solid rgba(31, 47, 63, 0.45);
-    background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(1px);
-}
-
-[data-theme="dark"] .custom-cursor-dot {
-    background: rgba(233, 242, 250, 0.92);
-}
-
-[data-theme="dark"] .custom-cursor-ring {
-    border-color: rgba(233, 242, 250, 0.52);
-    background: rgba(233, 242, 250, 0.04);
-}
-
-html[data-custom-cursor="on"] body,
-html[data-custom-cursor="on"] a,
-html[data-custom-cursor="on"] button,
-html[data-custom-cursor="on"] .tool-btn,
-html[data-custom-cursor="on"] .dot,
-html[data-custom-cursor="on"] .project-more-link,
-html[data-custom-cursor="on"] img,
-html[data-custom-cursor="on"] [role="button"] {
-    cursor: none !important;
-}
-
+html,
 body {
     margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body,
+.custom-cursor-dot,
+.custom-cursor-ring {
     background: linear-gradient(180deg, var(--page-bg-start) 0%, var(--page-bg-end) 100%);
     color: var(--text-900);
     font-family: var(--font-body);
@@ -207,14 +162,8 @@ body {
     transition: background 0.35s ease, color 0.35s ease;
 }
 
-a,
-button,
-.tool-btn,
-.dot,
-.project-more-link,
-.project-carousel-btn,
-.lore-nav-btn,
-[role="button"] {
+body {
+    min-height: 100vh;
 }
 
 header {
@@ -301,6 +250,7 @@ header {
 
 [data-theme="dark"] .menu a:hover {
     color: #f0d69c;
+    background: transparent;
 }
 
 [data-theme="dark"] .menu a {
@@ -313,10 +263,6 @@ header {
 [data-theme="dark"] .menu a.active,
 [data-theme="dark"] .menu a[aria-current="page"] {
     color: #fff8e8;
-    background: transparent;
-}
-
-[data-theme="dark"] .menu a:hover {
     background: transparent;
 }
 
@@ -793,8 +739,4 @@ footer {
         transition: none;
     }
 
-    .custom-cursor-dot,
-    .custom-cursor-ring {
-        display: none !important;
-    }
 }

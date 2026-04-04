@@ -12,18 +12,38 @@
 }
 
 .wheel-layout {
-    max-width: 980px;
+    max-width: 1160px;
     margin: 0 auto;
     display: grid;
+    grid-template-columns: minmax(430px, 1.16fr) minmax(0, 0.94fr);
     gap: 1rem;
+    align-items: stretch;
 }
 
 .wheel-panel {
-    background: var(--surface-1);
-    border: 1px solid var(--surface-border-strong);
-    border-radius: 16px;
-    box-shadow: 0 8px 18px rgba(13, 31, 45, 0.08);
-    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+    min-width: 0;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(160deg, var(--surface-3) 0%, var(--surface-2) 100%);
+    border: 1.5px solid var(--surface-border-strong);
+    border-radius: 18px;
+    box-shadow: 0 12px 28px rgba(13, 31, 45, 0.08);
+    padding: 1.15rem 1.5rem 1.25rem;
+}
+
+.wheel-panel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--blue-800), var(--blue-700), var(--blue-800));
 }
 
 .carousel-title {
@@ -41,43 +61,51 @@
 .wheel-controls {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 0.55rem;
-    margin-bottom: 0.8rem;
+    margin: 0.85rem 0 0.9rem;
 }
 
 .wheel-btn {
     border: 1px solid var(--surface-border-strong);
-    background: var(--surface-2);
+    background: var(--surface-1);
     color: var(--title-color);
     border-radius: 999px;
-    padding: 0.35rem 0.9rem;
+    padding: 0.4rem 0.95rem;
     font-weight: 700;
-    font-family: var(--font-body);
+    font-family: var(--font-display);
+    transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
 }
 
 .wheel-btn:hover {
     border-color: var(--accent-500);
+    background: var(--surface-2);
+    transform: translateY(-1px);
 }
 
 .skills-carousel {
-    width: min(100%, 560px);
-    margin: 0 auto;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    margin: auto 0;
     display: grid;
-    gap: 0.7rem;
-    justify-items: center;
+    gap: 0.8rem;
+    justify-items: stretch;
 }
 
 .carousel-card {
     width: 100%;
-    min-height: 170px;
+    min-width: 0;
+    box-sizing: border-box;
+    min-height: 215px;
     border: 1px solid var(--surface-border-strong);
-    border-radius: 16px;
-    background: #ffffff;
-    box-shadow: 0 8px 16px rgba(13, 31, 45, 0.09);
+    border-radius: 18px;
+    background: linear-gradient(145deg, #ffffff 0%, var(--surface-2) 100%);
+    box-shadow: 0 10px 22px rgba(13, 31, 45, 0.1);
     display: grid;
     place-content: center;
     text-align: center;
-    padding: 1rem;
+    padding: 1.3rem 1.5rem;
 }
 
 .carousel-card h3 {
@@ -90,11 +118,11 @@
 }
 
 .carousel-card p {
-    margin: 0.6rem 0 0;
+    margin: 0.65rem auto 0;
     color: var(--text-700);
-    font-size: 0.98rem;
-    line-height: 1.4;
-    max-width: 46ch;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 60ch;
 }
 
 .carousel-card.is-leaving-next {
@@ -141,50 +169,89 @@
 }
 
 .skills-blocks {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.9rem;
+    gap: 0.95rem;
 }
 
 .skills-block {
-    background: var(--surface-1);
-    border: 1px solid var(--surface-border-strong);
-    border-radius: 14px;
-    padding: 0.9rem;
-    box-shadow: 0 5px 14px rgba(13, 31, 45, 0.06);
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(160deg, var(--surface-3) 0%, var(--surface-2) 100%);
+    border: 1.5px solid var(--surface-border-strong);
+    border-radius: 16px;
+    padding: 1rem;
+    box-shadow: 0 8px 18px rgba(13, 31, 45, 0.06);
+    transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.skills-block::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--blue-800), var(--blue-700), var(--blue-800));
+}
+
+.skills-block:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 22px rgba(13, 31, 45, 0.1);
+    border-color: #b7c6d7;
+}
+
+.skills-block:nth-child(1) {
+    grid-column: 1 / -1;
 }
 
 .skills-block h3 {
-    margin: 0 0 0.55rem;
+    margin: 0 0 0.7rem;
     color: var(--title-color);
+    font-size: 1.02rem;
+    text-align: center;
 }
 
 .mini-pills {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.45rem;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
 .mini-pills span {
-    background: var(--surface-2);
+    background: rgba(42, 90, 127, 0.08);
     border: 1px solid var(--surface-border-strong);
     border-radius: 999px;
-    padding: 0.3rem 0.75rem;
+    padding: 0.36rem 0.8rem;
     font-weight: 600;
     color: var(--text-900);
     font-size: 0.9rem;
+    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.mini-pills span:hover {
+    transform: translateY(-1px);
+    background: rgba(42, 90, 127, 0.14);
+    border-color: #90abc7;
 }
 
 [data-theme="dark"] .intro-competences,
 [data-theme="dark"] .wheel-panel,
 [data-theme="dark"] .skills-block {
-    background: #161f33;
+    background: linear-gradient(160deg, #1a2a38 0%, #223548 100%);
     border-color: rgba(192, 132, 252, 0.42);
     box-shadow: 0 10px 22px rgba(0, 0, 0, 0.26);
 }
 
+[data-theme="dark"] .wheel-panel::before,
+[data-theme="dark"] .skills-block::before {
+    background: linear-gradient(90deg, var(--neon-red), var(--neon-purple), var(--neon-red));
+}
+
 [data-theme="dark"] .carousel-card {
-    background: #1a2237;
+    background: linear-gradient(145deg, #1a2237 0%, #202b44 100%);
     border-color: rgba(192, 132, 252, 0.52);
 }
 
@@ -203,9 +270,22 @@
     color: #f3e2b2;
 }
 
+[data-theme="dark"] .mini-pills span:hover {
+    background: #29435a;
+    border-color: #6f8aa3;
+}
+
 @media (max-width: 900px) {
+    .wheel-layout {
+        grid-template-columns: 1fr;
+    }
+
     .skills-blocks {
         grid-template-columns: 1fr;
+    }
+
+    .skills-block:nth-child(1) {
+        grid-column: auto;
     }
 }
 

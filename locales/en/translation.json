@@ -30,8 +30,8 @@
       "heading": "Candice Carton",
       "subtitle": "Computer Science Student",
       "intro": [
-        "As a second-year Computer Science student at the IUT of Clermont-Ferrand, I specialize in web development, database management, and interactive experience design.",
-        "I am looking for a work-study position for my third year, with a strong interest in mobile and web development. Passionate about Japanese culture, anime, and game design, these interests shape my creative perspective and enrich the way I approach interface and user experience design."
+        "As a second-year Computer Science student at the IUT of Clermont-Ferrand, I specialize in mobile and web development, with complementary skills in database management and interactive experience design.",
+        "I am looking for a work-study position for my third year, with a focus on mobile development. Passionate about Japanese culture, anime, and game design, these interests shape my creative perspective and enrich the way I approach interface and user experience design."
       ],
       "actions": [
         "View my technical profile",
@@ -41,7 +41,7 @@
       "carousel": [
         {
           "alt": "Portrait",
-          "label": "Candice - Web and mobile development"
+          "label": "Candice - Mobile and web development"
         },
         {
           "alt": "IUT Clermont-Ferrand",
@@ -64,8 +64,8 @@
     "skills": {
       "title": "Skills - Candice Carton",
       "heading": "My skills",
-      "overviewTitle": "Skills carousel",
-      "poleTitle": "Technical area",
+      "overviewTitle": "Programming languages",
+      "poleTitle": "",
       "wheelControls": {
         "pause": "Pause",
         "auto": "Auto",
@@ -74,32 +74,36 @@
       },
       "wheelSkills": [
         {
-          "label": "C",
-          "detail": "Procedural programming and algorithmic practice on academic projects."
-        },
-        {
-          "label": "C++",
-          "detail": "Built an Orbitro web game project developed with .NET MAUI."
+          "label": "Kotlin",
+          "detail": "Used to build modern Android interfaces that are structured, clear, and designed for real mobile usage."
         },
         {
           "label": "C#",
-          "detail": "Used with Unity 3D for gameplay logic and interactions."
+          "detail": "Used with Unity and .NET MAUI to create game mechanics, manage interactions, and build a digital game project."
+        },
+        {
+          "label": "C++",
+          "detail": "Helped me deepen my object-oriented programming skills and structure more technical application logic."
         },
         {
           "label": "Java",
-          "detail": "Built a weather application."
+          "detail": "Used to strengthen my application development foundations, especially through a weather app project using external data."
         },
         {
-          "label": "Kotlin",
-          "detail": "Contribution to a team-based Android mobile application."
-        },
-        {
-          "label": "Python",
-          "detail": "Scripting, task automation, and practical problem solving."
+          "label": "JavaScript",
+          "detail": "Very useful for making web interfaces more dynamic, interactive, and pleasant to use on the front end."
         },
         {
           "label": "SQL",
-          "detail": "Relational design and queries to retrieve and structure data."
+          "detail": "Used for relational database design, practical queries, and clear data structuring."
+        },
+        {
+          "label": "C",
+          "detail": "Built a strong foundation in algorithms, procedural logic, and precise code understanding."
+        },
+        {
+          "label": "Python",
+          "detail": "Practical for automation, quick testing, and efficient scripting or problem-solving tasks."
         }
       ],
       "blocks": {
@@ -173,7 +177,7 @@
           ],
           "items": [
             "More ambitious coursework projects carried out over longer time spans.",
-            "Stronger foundations in Python, C, SQL, and web development with a more professional approach."
+            "Stronger foundations in Python, C, SQL, and web and mobile development with a more professional approach."
           ]
         },
         {
@@ -245,51 +249,91 @@
     },
     "projects": {
       "title": "Projects - Candice Carton",
-      "heading": "My projects",
-      "intro": "A snapshot of my academic and personal work, with projects focused on databases, game design, and immersive experiences.",
+      "heading": "My Projects",
+      "intro": "A selection of my academic and personal work, spanning mobile development, databases, game design, and immersive experiences.",
+      "filters": {
+        "statusLabel": "Status",
+        "skillLabel": "Skills",
+        "hint": "You can select multiple skills.",
+        "selectedMany": "{{count}} selected",
+        "reset": "Reset",
+        "status": {
+          "all": "All"
+        },
+        "skills": {
+          "all": "All",
+          "kotlin": "Kotlin",
+          "unity": "Unity3D",
+          "web": "Web & .NET",
+          "api": "API",
+          "game-design": "Game design"
+        },
+        "results": {
+          "zero": "No projects match the selected filters.",
+          "one": "1 project shown",
+          "other": "{{count}} projects shown"
+        }
+      },
       "cards": [
         {
           "title": "Livradois-Forez Forest Mapping",
           "paragraphs": [
-            "This project aims to provide a tree mapping platform for the Livradois-Forez association. The application makes it possible to consult data about tree species and diseases, and to add, edit, or remove entries for field monitoring needs.<br>The team delivered multiple connected outputs: a Kotlin mobile app, a PHP web app, a Blazor admin app, and an API linking all components.<br>I mainly worked on account authentication in PHP and on tree-related data management with EF. My contribution was interrupted mid-project because I left for my semester in Canada.",
+            "This project aims to provide a tree mapping solution for the Livradois-Forez association. The application allows users to consult information about species and diseases, and to add, edit, or delete entries based on field monitoring needs.<br>The team delivered several connected components: a Kotlin mobile app, a PHP web app, a Blazor admin interface, and an API linking everything together.<br>I mainly worked on account authentication on the PHP side and on tree data management with EF. My contribution was cut short when I left for my semester in Canada.",
             "Technologies used: Blazor, PHP, Entity Framework, ASP.NET, Kotlin."
           ],
           "captions": [
-            "Mapping interface preview"
+            "Web app",
+            "Admin interface",
+            "Mobile app"
           ]
         },
         {
-          "title": "VR project",
+          "title": "Rep'It - Mobile Fitness Routine App",
           "paragraphs": [
-            "This project is being developed by a team of five in Unity3D, as an immersive experience focused on atmosphere and exploration.<br>At this stage, the environments are built and the implementation of interactive scene elements is in progress.<br>The core mechanics already defined include teleportation, interactions with environment objects, and events triggered at key moments of the player journey.",
+            "This Android app, built in Kotlin by a two-person team, helps users organize workout routines and stay consistent over time.<br>The goal is to provide simple tracking for sessions, exercises, and weekly habits through a clear interface designed for everyday use.<br>In the longer term, the app is intended to connect to a weather API, include a statistics system, and personalize daily challenges according to user preferences and current conditions.",
+            "Technologies used: Kotlin, Android Studio, XML, weather API (planned)."
+          ],
+          "captions": [
+            "Overview of active and completed challenges",
+            "Upcoming challenges",
+            "Creating a one-time challenge",
+            "Creating a one-day challenge",
+            "Creating a recurring challenge"
+          ]
+        },
+        {
+          "title": "Black Out - Immersive VR Experience",
+          "paragraphs": [
+            "<strong>Black Out</strong> is a VR project developed by a team of five in Unity3D and designed as an immersive virtual reality experience.<br>The player is placed inside a house with no electricity and must restore the power by finding the key to the room containing the electrical panel.<br>The game relies on pareidolia and audio cues to heighten tension, distort perception, and deepen immersion throughout the experience.",
             "Technologies used: Unity3D."
           ],
           "captions": [
-            "Environment and mood preview",
-            "Teleportation and interactions preview",
-            "Scripted events preview"
+            "Setting and atmosphere - view 1",
+            "Setting and atmosphere - view 2",
+            "Teleportation and interactions",
+            "Scripted events"
           ]
         },
         {
-          "title": "VR weather station connected to an API",
+          "title": "VR Weather Station Connected to an API",
           "paragraphs": [
-            "Built in Unity as a functional prototype, this project focused on consuming weather data from an API and displaying it inside a VR environment.<br>The visual form was not the priority. The key objective was readable weather information rendered in-scene, especially on a television in a virtual living room.<br>The final result validates an end-to-end integration between Unity and the API with dynamic weather updates in 3D.",
+            "Created in Unity as a functional prototype, this project focused on retrieving weather data from an API and displaying it inside a VR environment.<br>The visual aspect was intentionally secondary. The main objective was to make the weather information clear and visible in the scene, especially on a television in a virtual living room.<br>The final result demonstrates end-to-end integration between Unity and the API, with dynamic weather updates displayed in 3D.",
             "Technologies used: Unity3D, weather API (HTTP/JSON requests)."
           ],
           "captions": [
             "VR living room overview",
-            "Weather shown on the TV",
+            "Weather displayed on the TV",
             "Weather data variation",
             "Final integrated prototype"
           ]
         },
         {
-          "title": "Video game design project",
+          "title": "Video Game Design Project",
           "paragraphs": [
-            "This is a solo video game design project built around <strong>Yume no Fukushuu</strong>, imagined as an action-adventure experience for PC and consoles.<br>The objective was to design a complete concept and formalize it in a clear one-pager. The project also includes an original lore that is more detailed than what appears in the summary document.<br>The concept features 5 main bosses and focuses on strong consistency between narrative, worldbuilding, and gameplay intentions.",
-            "Final deliverable: one-pager."
+            "This solo game design project revolves around <strong>Yume no Fukushuu</strong>, imagined as an action-adventure experience for PC and consoles.<br>The goal was to design a complete concept and present it in a clear one-pager. The project also includes an original lore that goes further than what is shown in the summary document.<br>The concept features five main bosses and emphasizes strong consistency between narrative, worldbuilding, and gameplay intent.",
+            "Deliverable: one-pager."
           ],
-          "moreInfo": "More information",
+          "moreInfo": "Learn more",
           "captions": [
             "Project one-pager"
           ]

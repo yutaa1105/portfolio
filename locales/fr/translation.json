@@ -30,8 +30,8 @@
       "heading": "Candice Carton",
       "subtitle": "Étudiante en BUT Informatique",
       "intro": [
-        "Étudiante en deuxième année de BUT Informatique à l'IUT de Clermont-Ferrand, je me spécialise dans le développement web, la gestion de bases de données et la conception d'expériences interactives.",
-        "Je recherche une alternance pour ma 3e année, avec un intérêt marqué pour le développement mobile et web. Passionnée par la culture japonaise, les animés et le game design, ces univers influencent ma sensibilité créative et enrichissent ma façon d'aborder la conception d'interfaces et d'expériences utilisateur."
+        "Étudiante en deuxième année de BUT Informatique à l'IUT de Clermont-Ferrand, je me spécialise dans le développement mobile et web, avec des compétences complémentaires en gestion de bases de données et conception d'expériences interactives.",
+        "Je recherche une alternance pour ma 3e année, orientée développement mobile. Passionnée par la culture japonaise, les animés et le game design, ces univers influencent ma sensibilité créative et enrichissent ma façon d'aborder la conception d'interfaces et d'expériences utilisateur."
       ],
       "actions": [
         "Voir mon profil technique",
@@ -41,7 +41,7 @@
       "carousel": [
         {
           "alt": "Portrait",
-          "label": "Candice - Développement web et mobile"
+          "label": "Candice - Développement mobile et web"
         },
         {
           "alt": "IUT Clermont-Ferrand",
@@ -64,8 +64,8 @@
     "skills": {
       "title": "Compétences - Candice Carton",
       "heading": "Mes compétences",
-      "overviewTitle": "Carrousel de compétences",
-      "poleTitle": "Pôle technique",
+      "overviewTitle": "Langages de programmation",
+      "poleTitle": "",
       "wheelControls": {
         "pause": "Pause",
         "auto": "Auto",
@@ -74,32 +74,36 @@
       },
       "wheelSkills": [
         {
-          "label": "C",
-          "detail": "Programmation procédurale et algorithmique sur des projets académiques."
-        },
-        {
-          "label": "C++",
-          "detail": "Réalisation d'un projet Orbitro en jeu web, développé en .NET MAUI."
+          "label": "Kotlin",
+          "detail": "Développement d'interfaces Android modernes, structurées et pensées pour une vraie utilisation mobile."
         },
         {
           "label": "C#",
-          "detail": "Utilisé avec Unity 3D pour la logique gameplay et interactions."
+          "detail": "Utilisé avec Unity et .NET MAUI pour créer des mécaniques de jeu, gérer les interactions et réaliser un jeu numérique."
+        },
+        {
+          "label": "C++",
+          "detail": "Approfondissement de la programmation orientée objet et structuration d'une logique applicative plus technique."
         },
         {
           "label": "Java",
-          "detail": "Réalisation d'une application de météo."
+          "detail": "Utilisé pour consolider mes bases en développement applicatif, notamment autour d'un projet météo avec données externes."
         },
         {
-          "label": "Kotlin",
-          "detail": "Participation à une application mobile Android en équipe."
-        },
-        {
-          "label": "Python",
-          "detail": "Scripts, automatisation de tâches et résolution de problèmes."
+          "label": "JavaScript",
+          "detail": "Très utile pour rendre les interfaces web plus dynamiques, interactives et agréables à utiliser côté front-end."
         },
         {
           "label": "SQL",
-          "detail": "Conception relationnelle et requêtes pour interroger les données."
+          "detail": "Conception de bases relationnelles, écriture de requêtes utiles et structuration logique des données."
+        },
+        {
+          "label": "C",
+          "detail": "Base solide en algorithmique, en logique procédurale et en compréhension fine du fonctionnement du code."
+        },
+        {
+          "label": "Python",
+          "detail": "Pratique pour automatiser, tester rapidement des idées et résoudre efficacement des problèmes de scripting."
         }
       ],
       "blocks": {
@@ -173,7 +177,7 @@
           ],
           "items": [
             "Projets de SAE plus complets, menés sur des volumes horaires plus importants.",
-            "Renforcement des bases en Python, C, SQL et développement web, avec une approche plus professionnalisante."
+            "Renforcement des bases en Python, C, SQL et en développement web et mobile, avec une approche plus professionnalisante."
           ]
         },
         {
@@ -246,26 +250,66 @@
     "projects": {
       "title": "Réalisations - Candice Carton",
       "heading": "Mes réalisations",
-      "intro": "Un aperçu de mes réalisations académiques et personnelles, avec des projets orientés base de données, game design et expériences immersives.",
+      "intro": "Un aperçu de mes réalisations académiques et personnelles, avec des projets orientés développement mobile, base de données, game design et expériences immersives.",
+      "filters": {
+        "statusLabel": "Statut",
+        "skillLabel": "Compétences",
+        "hint": "Vous pouvez sélectionner plusieurs compétences.",
+        "selectedMany": "{{count}} sélectionnées",
+        "reset": "Réinitialiser",
+        "status": {
+          "all": "Tous"
+        },
+        "skills": {
+          "all": "Toutes",
+          "kotlin": "Kotlin",
+          "unity": "Unity3D",
+          "web": "Web / .NET",
+          "api": "API",
+          "game-design": "Game design"
+        },
+        "results": {
+          "zero": "Aucun projet ne correspond à ces filtres.",
+          "one": "1 projet affiché",
+          "other": "{{count}} projets affichés"
+        }
+      },
       "cards": [
         {
           "title": "Cartographie forestière du Livradois-Forez",
           "paragraphs": [
-            "Ce projet vise à fournir une cartographie des arbres pour l'association du Livradois-Forez. L'application permet de consulter les informations liées aux essences et aux maladies, puis d'ajouter, modifier ou supprimer des entrées selon les besoins du suivi terrain.<br>Le travail d'équipe a abouti à plusieurs livrables complémentaires : une application mobile en Kotlin, une application web en PHP, une application d'administration en Blazor et une API pour relier l'ensemble.<br>J'ai principalement travaillé sur le système de connexion des comptes côté PHP ainsi que sur la gestion des données relatives aux arbres en EF. Ma contribution a été interrompue en cours de projet en raison de mon départ pour le semestre au Canada.",
+            "Ce projet vise à fournir une cartographie des arbres pour l'association du Livradois-Forez. L'application permet de consulter les informations liées aux espèces et aux maladies, puis d'ajouter, modifier ou supprimer des entrées selon les besoins du suivi terrain.<br>Le travail d'équipe a abouti à plusieurs livrables complémentaires : une application mobile en Kotlin, une application web en PHP, une application d'administration en Blazor et une API pour relier l'ensemble.<br>J'ai principalement travaillé sur le système de connexion des comptes côté PHP ainsi que sur la gestion des données relatives aux arbres en EF. Ma contribution a été interrompue en cours de projet en raison de mon départ pour le semestre au Canada.",
             "Technologies utilisées : Blazor, PHP, Entity Framework, ASP.NET, Kotlin."
           ],
           "captions": [
-            "Aperçu de l'interface de cartographie"
+            "Application web",
+            "Application d'administration",
+            "Application mobile"
           ]
         },
         {
-          "title": "Projet VR",
+          "title": "Rep'It - application mobile de routines sportives",
           "paragraphs": [
-            "Projet réalisé en groupe de 5 sous Unity3D, autour d'une expérience immersive orientée ambiance et exploration.<br>À ce stade, les décors sont créés et la mise en place des éléments interactifs est en cours d'implémentation dans la scène.<br>Les mécaniques principales déjà définies sont la téléportation, les interactions avec des éléments du décor et des événements déclenchés à des moments clés du parcours joueur.",
+            "Application mobile Android développée en Kotlin en équipe de deux pour aider à organiser des routines sportives et garder une pratique régulière.<br>L'objectif est de proposer un suivi simple des séances, des exercices et des habitudes hebdomadaires dans une interface claire pensée pour un usage quotidien.<br>À plus long terme, l'application sera reliée à une API météo afin de suggérer un défi du jour adapté aux conditions extérieures, proposera un système de statistiques et permettra de personnaliser les défis du jour en fonction des préférences de l'utilisateur.",
+            "Technologies utilisées : Kotlin, Android Studio, XML, API météo (prévue)."
+          ],
+          "captions": [
+            "Vue d’ensemble des défis",
+            "Défis à venir",
+            "Création d’un défi ponctuel",
+            "Création d’un défi sur une journée",
+            "Création d’un défi récurrent"
+          ]
+        },
+        {
+          "title": "Black Out - Expérience immersive en réalité virtuelle",
+          "paragraphs": [
+            "<strong>Black Out</strong> est un projet réalisé en groupe de 5 sous Unity3D, pensé comme une expérience immersive en réalité virtuelle.<br>Le joueur est plongé dans une maison privée de courant et doit rétablir l'électricité en retrouvant la clé de la pièce où se trouve le panneau électrique.<br>Le jeu s'appuie sur la paréidolie et l'audition pour renforcer la tension, troubler la perception et accentuer l'immersion tout au long de l'exploration.",
             "Technologies utilisées : Unity3D."
           ],
           "captions": [
-            "Décor et ambiance",
+            "Décor et ambiance - vue 1",
+            "Décor et ambiance - vue 2",
             "Téléportation et interactions",
             "Événements scénarisés"
           ]

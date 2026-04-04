@@ -17,8 +17,8 @@
             document.documentElement.setAttribute('data-theme', theme);
         }());
     </script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/competences.css">
+    <link rel="stylesheet" href="css/style.css?v=20260402">
+    <link rel="stylesheet" href="css/competences.css?v=20260402">
 </head>
 <body data-page="skills">
     <header>
@@ -37,8 +37,7 @@
 
         <section class="a-propos wheel-layout" aria-label="Roue interactive des compétences">
             <div class="wheel-panel">
-                <h2 class="carousel-title" data-carousel-title>Carrousel de compétences</h2>
-                <h3 class="pole-title" data-pole-title>Pôle technique</h3>
+                <h2 class="carousel-title" data-carousel-title>Langages de programmation</h2>
                 <div class="wheel-controls" role="group" aria-label="Contrôles de la roue">
                     <button type="button" class="wheel-btn" data-wheel-prev>◀</button>
                     <button type="button" class="wheel-btn" data-wheel-toggle>Pause</button>
@@ -47,26 +46,18 @@
 
                 <div class="skills-carousel" data-skills-carousel>
                     <div class="carousel-card" data-carousel-card>
-                        <h3 data-wheel-label>C</h3>
-                        <p data-wheel-detail>Programmation procédurale et algorithmique.</p>
+                        <h3 data-wheel-label>Kotlin</h3>
+                        <p data-wheel-detail>Développement d'interfaces Android modernes, structurées et pensées pour une vraie utilisation mobile.</p>
                     </div>
                     <p class="carousel-meta">
                         <span data-carousel-index>1</span>
                         /
-                        <span data-carousel-total>7</span>
+                        <span data-carousel-total>8</span>
                     </p>
                 </div>
             </div>
 
             <div class="skills-blocks" aria-label="Blocs de compétences">
-                <article class="skills-block">
-                    <h3 data-block-title="gamesMobile">Jeux & Mobile</h3>
-                    <div class="mini-pills" data-block-items="gamesMobile">
-                        <span>Unity 3D (C#)</span>
-                        <span>Android Studio</span>
-                    </div>
-                </article>
-
                 <article class="skills-block">
                     <h3 data-block-title="webDotnet">Web & .NET</h3>
                     <div class="mini-pills" data-block-items="webDotnet">
@@ -78,6 +69,22 @@
                         <span>Blazor</span>
                         <span>.NET MAUI</span>
                         <span>Entity Framework</span>
+                    </div>
+                </article>
+
+                <article class="skills-block">
+                    <h3 data-block-title="gamesMobile">Jeux & Mobile</h3>
+                    <div class="mini-pills" data-block-items="gamesMobile">
+                        <span>Unity 3D (C#)</span>
+                        <span>Android Studio</span>
+                    </div>
+                </article>
+
+                <article class="skills-block">
+                    <h3 data-block-title="tools">Outils</h3>
+                    <div class="mini-pills" data-block-items="tools">
+                        <span>Git</span>
+                        <span>GitHub</span>
                     </div>
                 </article>
 
@@ -94,14 +101,6 @@
                     <div class="mini-pills" data-block-items="uiux">
                         <span>Conception d'interfaces</span>
                         <span>Expérience utilisateur</span>
-                    </div>
-                </article>
-
-                <article class="skills-block">
-                    <h3 data-block-title="tools">Outils</h3>
-                    <div class="mini-pills" data-block-items="tools">
-                        <span>Git</span>
-                        <span>GitHub</span>
                     </div>
                 </article>
             </div>
@@ -121,9 +120,9 @@
             </div>
         </div>
     </footer>
-    <script src="https://unpkg.com/i18next@23.16.8/dist/umd/i18next.min.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/i18next-http-backend@2.6.2/i18nextHttpBackend.min.js" crossorigin="anonymous"></script>
-    <script src="scripts.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/i18next@23.16.8/dist/umd/i18next.min.js" integrity="sha384-ZB4j+Y4rqTlON+loxr/YKq9WV8qBuZOqKukqmQVgcZ0GFy93B7TMCSezcrRkfJF5" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/i18next-http-backend@2.6.2/i18nextHttpBackend.min.js" integrity="sha384-WlaJRQMbzrA3QRfGKaedoEsPN/23lW+GV1gIyeUHkbO8EZ+R8/z7Esg7z3XAxdxH" crossorigin="anonymous"></script>
+    <script src="scripts.js?v=20260403" crossorigin="anonymous"></script>
 </body>
 </html>
 

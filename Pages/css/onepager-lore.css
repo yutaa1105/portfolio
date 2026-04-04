@@ -178,6 +178,7 @@
 .lore-carousel-dots .dot.active {
     transform: scale(1.2);
     background: var(--accent-500);
+    box-shadow: 0 0 8px rgba(201, 169, 97, 0.35);
 }
 
 [data-theme="dark"] .lore-viewer-card {

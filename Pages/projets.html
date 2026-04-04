@@ -17,8 +17,8 @@
             document.documentElement.setAttribute('data-theme', theme);
         }());
     </script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/projets.css">
+    <link rel="stylesheet" href="css/style.css?v=20260402-2">
+    <link rel="stylesheet" href="css/projets.css?v=20260402-2">
 </head>
 <body data-page="projects">
     <header>
@@ -33,45 +33,158 @@
     </header>
     <main class="projets-page">
         <h1 class="titre">Mes réalisations</h1>
-        <p class="projets-intro">Un aperçu de mes réalisations académiques et personnelles, avec des projets orientés base de données, game design et expériences immersives.</p>
+        <p class="projets-intro">Un aperçu de mes réalisations académiques et personnelles, avec des projets orientés développement mobile, base de données, game design et expériences immersives.</p>
+
+        <section class="projects-filters" aria-label="Filtres des projets">
+            <div class="filters-toolbar">
+                <div class="filter-group filter-dropdown filter-dropdown-status">
+                    <button type="button" class="filter-trigger" aria-haspopup="true">
+                        <span class="filter-trigger-text">
+                            <span class="filter-trigger-label" data-filter-label="status">Statut</span>
+                            <span class="filter-trigger-value" data-filter-summary="status">Tous</span>
+                        </span>
+                        <span class="filter-trigger-icon" aria-hidden="true">▾</span>
+                    </button>
+                    <div class="filter-menu filter-buttons">
+                        <button type="button" class="filter-chip active" data-filter-group="status" data-filter-value="all" aria-pressed="true">Tous</button>
+                        <button type="button" class="filter-chip" data-filter-group="status" data-filter-value="in-progress" aria-pressed="false">En cours</button>
+                        <button type="button" class="filter-chip" data-filter-group="status" data-filter-value="completed" aria-pressed="false">Fini</button>
+                    </div>
+                </div>
+
+                <div class="filter-group filter-dropdown filter-dropdown-skills">
+                    <button type="button" class="filter-trigger" aria-haspopup="true">
+                        <span class="filter-trigger-text">
+                            <span class="filter-trigger-label" data-filter-label="skill">Compétences</span>
+                            <span class="filter-trigger-value" data-filter-summary="skill">Toutes</span>
+                        </span>
+                        <span class="filter-trigger-icon" aria-hidden="true">▾</span>
+                    </button>
+                    <div class="filter-menu filter-buttons">
+                        <button type="button" class="filter-chip active" data-filter-group="skill" data-filter-value="all" aria-pressed="true">Toutes</button>
+                        <button type="button" class="filter-chip" data-filter-group="skill" data-filter-value="kotlin" aria-pressed="false">Kotlin</button>
+                        <button type="button" class="filter-chip" data-filter-group="skill" data-filter-value="unity" aria-pressed="false">Unity3D</button>
+                        <button type="button" class="filter-chip" data-filter-group="skill" data-filter-value="web" aria-pressed="false">Web / .NET</button>
+                        <button type="button" class="filter-chip" data-filter-group="skill" data-filter-value="api" aria-pressed="false">API</button>
+                        <button type="button" class="filter-chip" data-filter-group="skill" data-filter-value="game-design" aria-pressed="false">Game design</button>
+                    </div>
+                </div>
+
+                <button type="button" class="filter-reset-btn" data-filter-reset>Réinitialiser</button>
+            </div>
+        </section>
+
+        <p class="projects-filter-result" data-filter-result>5 projets affichés</p>
 
         <section class="projets-layout" aria-label="Liste des réalisations">
 
-            <article class="projet">
+            <article class="projet" data-skills="kotlin,web,api,database">
                 <div class="project-meta">
                     <span class="project-status" data-project-status="in-progress"></span>
                 </div>
                 <h3>Cartographie forestière du Livradois-Forez</h3>
                 <p>
-                    Ce projet vise à fournir une cartographie des arbres pour l'association du Livradois-Forez. L'application permet de consulter les informations liées aux essences et aux maladies, puis d'ajouter, modifier ou supprimer des entrées selon les besoins du suivi terrain.
+                    Ce projet vise à fournir une cartographie des arbres pour l'association du Livradois-Forez. L'application permet de consulter les informations liées aux espèces et aux maladies, puis d'ajouter, modifier ou supprimer des entrées selon les besoins du suivi terrain.
                     <br>Le travail d'équipe a abouti à plusieurs livrables complémentaires : une application mobile en Kotlin, une application web en PHP, une application d'administration en Blazor et une API pour relier l'ensemble.
                     <br>J'ai principalement travaillé sur le système de connexion des comptes côté PHP ainsi que sur la gestion des données relatives aux arbres en EF. Ma contribution a été interrompue en cours de projet en raison de mon départ pour le semestre au Canada.
                 </p>
                 <p class="projet-note">Technologies utilisées : Blazor, PHP, Entity Framework, ASP.NET, Kotlin.</p>
-                <div class="photos photos-futures" aria-label="Emplacements d'images a venir">
-                    <figure>
-                        <img src="../images/projects/CartographieForestière.png" alt="Aperçu visuel du projet de SAE de 2e année">
-                        <figcaption>Aperçu de l'interface de cartographie</figcaption>
-                    </figure>
+                <div class="project-carousel project-carousel-centered" aria-label="Carrousel du projet de cartographie forestière">
+                    <button type="button" class="project-carousel-btn prev" data-action="prev" aria-label="Image précédente">&#10094;</button>
+
+                    <div class="photos" aria-label="Galerie du projet de cartographie forestière">
+                        <figure class="carousel-slide active">
+                            <img src="../images/projects/webapp.png" alt="Interface web du projet de cartographie forestière">
+                            <figcaption>Application web</figcaption>
+                        </figure>
+                        <figure class="carousel-slide">
+                            <img src="../images/projects/adminapp.png" alt="Interface d'administration du projet de cartographie forestière">
+                            <figcaption>Application d'administration</figcaption>
+                        </figure>
+                         <figure class="carousel-slide">
+                            <img src="../images/projects/mobileapp.jpg" alt="Interface mobile du projet de cartographie forestière">
+                            <figcaption>Application mobile</figcaption>
+                        </figure>
+                    </div>
+
+                    <button type="button" class="project-carousel-btn next" data-action="next" aria-label="Image suivante">&#10095;</button>
                 </div>
+                <div class="project-carousel-dots" aria-label="Navigation du carrousel"></div>
             </article>
 
-            <article class="projet">
+            <article class="projet" data-skills="kotlin,api,mobile">
                 <div class="project-meta">
                     <span class="project-status" data-project-status="in-progress"></span>
                 </div>
-                <h3>Projet VR</h3>
+                <h3>Rep'It - application mobile de routines sportives</h3>
                 <p>
-                    Projet réalisé en groupe de 5 sous Unity3D, autour d'une expérience immersive orientée ambiance et exploration.
-                    <br>À ce stade, les décors sont créés et la mise en place des éléments interactifs est en cours d'implémentation dans la scène.
-                    <br>Les mécaniques principales déjà définies sont la téléportation, les interactions avec des éléments du décor et des événements déclenchés à des moments clés du parcours joueur.
+                    Application mobile Android développée en Kotlin en équipe de deux pour aider à organiser des routines sportives et garder une pratique régulière.
+                    <br>L'objectif est de proposer un suivi simple des séances, des exercices et des habitudes hebdomadaires dans une interface claire pensée pour un usage quotidien.
+                    <br>À plus long terme, l'application sera reliée à une API météo afin de suggérer un défi du jour adapté aux conditions extérieures, proposera un système de statistiques et permettra de personnaliser les défis du jour en fonction des préférences de l'utilisateur.
+                </p>
+                <p class="projet-note">Technologies utilisées : Kotlin, Android Studio, XML, API météo (prévue).</p>
+                <div class="project-carousel project-carousel-centered" aria-label="Carrousel du projet Rep'It">
+                    <button type="button" class="project-carousel-btn prev" data-action="prev" aria-label="Image précédente">&#10094;</button>
+
+                    <div class="photos" aria-label="Galerie du projet Rep'It">
+                        <figure class="carousel-slide active">
+                            <img src="../images/projects/accueil1.jpg" alt="Écran d'accueil de Rep'It avec les défis en cours et terminés">
+                            <figcaption>Vue d’ensemble des défis</figcaption>
+                        </figure>
+                        <figure class="carousel-slide">
+                            <img src="../images/projects/accueil2.jpg" alt="Écran d'accueil de Rep'It avec la liste des défis planifiés">
+                            <figcaption>Défis à venir</figcaption>
+                        </figure>
+                        <figure class="carousel-slide">
+                            <img src="../images/projects/form1.jpg" alt="Formulaire de création d'un défi ponctuel dans Rep'It">
+                            <figcaption>Création d’un défi ponctuel</figcaption>
+                        </figure>
+                        <figure class="carousel-slide">
+                            <img src="../images/projects/form2.jpg" alt="Formulaire de création d'un défi sans date de fin dans Rep'It">
+                            <figcaption>Création d’un défi sur une journée</figcaption>
+                        </figure>
+                        <figure class="carousel-slide">
+                            <img src="../images/projects/form3.jpg" alt="Formulaire de création d'un défi récurrent dans Rep'It">
+                            <figcaption>Création d’un défi récurrent</figcaption>
+                        </figure>
+                    </div>
+
+                    <button type="button" class="project-carousel-btn next" data-action="next" aria-label="Image suivante">&#10095;</button>
+                </div>
+                <div class="project-carousel-dots" aria-label="Navigation du carrousel"></div>
+            </article>
+
+            <article class="projet" data-skills="unity,game-design">
+                <div class="project-meta">
+                    <span class="project-status" data-project-status="in-progress"></span>
+                </div>
+                <h3>Black Out - Expérience immersive en réalité virtuelle</h3>
+                <p>
+                    <strong>Black Out</strong> est un projet réalisé en groupe de 5 sous Unity3D, pensé comme une expérience immersive en réalité virtuelle.
+                    <br>Le joueur est plongé dans une maison privée de courant et doit rétablir l'électricité en retrouvant la clé de la pièce où se trouve le panneau électrique.
+                    <br>Le jeu s'appuie sur la paréidolie et l'audition pour renforcer la tension, troubler la perception et accentuer l'immersion tout au long de l'exploration.
                 </p>
                 <p class="projet-note">Technologies utilisées : Unity3D.</p>
                 <div class="photos photos-futures" aria-label="Illustrations du projet VR">
-                    <figure>
-                        <img class="img-placeholder" src="../images/placeholders/placeholder-project.svg" alt="Illustration du décor du projet VR">
-                        <figcaption>Décor et ambiance</figcaption>
-                    </figure>
+                    <div class="project-carousel-card">
+                        <div class="project-carousel project-carousel-compact" aria-label="Carrousel des décors du projet Black Out">
+                            <button type="button" class="project-carousel-btn prev" data-action="prev" aria-label="Image précédente">&#10094;</button>
+
+                            <div class="photos" aria-label="Galerie des décors du projet VR">
+                                <figure class="carousel-slide active">
+                                    <img src="../images/projects/decor1.png" alt="Premier décor du projet Black Out">
+                                    <figcaption>Décor et ambiance - vue 1</figcaption>
+                                </figure>
+                                <figure class="carousel-slide">
+                                    <img src="../images/projects/decor2.png" alt="Deuxième décor du projet Black Out">
+                                    <figcaption>Décor et ambiance - vue 2</figcaption>
+                                </figure>
+                            </div>
+
+                            <button type="button" class="project-carousel-btn next" data-action="next" aria-label="Image suivante">&#10095;</button>
+                        </div>
+                        <div class="project-carousel-dots" aria-label="Navigation du carrousel"></div>
+                    </div>
                     <figure>
                         <img class="img-placeholder" src="../images/placeholders/placeholder-project.svg" alt="Illustration des interactions du projet VR">
                         <figcaption>Téléportation et interactions</figcaption>
@@ -83,7 +196,7 @@
                 </div>
             </article>
 
-            <article class="projet">
+            <article class="projet" data-skills="unity,api">
                 <div class="project-meta">
                     <span class="project-status" data-project-status="completed"></span>
                 </div>
@@ -122,7 +235,7 @@
                 <div class="project-carousel-dots" aria-label="Navigation du carrousel"></div>
             </article>
 
-            <article class="projet">
+            <article class="projet" data-skills="game-design">
                 <div class="project-meta">
                     <span class="project-status" data-project-status="completed"></span>
                 </div>
@@ -136,7 +249,7 @@
                 <p class="projet-more">
                     <a class="project-more-link" href="onepager-lore.html">Plus d'informations</a>
                 </p>
-                <div class="photos photos-futures" aria-label="Emplacements d'images a venir">
+                <div class="photos photos-futures photos-centered" aria-label="Emplacements d'images a venir">
                     <figure>
                         <a href="../Pages/lore.pdf" target="_blank" rel="noopener noreferrer">
                             <img src="../images/projects/Onepager.png" alt="Aperçu du one-pager du projet de conception de jeu vidéo">
@@ -145,6 +258,7 @@
                     </figure>
                 </div>
             </article>
+
         </section>
     </main>
     <footer>
@@ -164,9 +278,9 @@
         <span id="lightbox-close">&times;</span>
         <img id="lightbox-img" src="" alt="Agrandissement">
     </div>
-    <script src="https://unpkg.com/i18next@23.16.8/dist/umd/i18next.min.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/i18next-http-backend@2.6.2/i18nextHttpBackend.min.js" crossorigin="anonymous"></script>
-    <script src="scripts.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/i18next@23.16.8/dist/umd/i18next.min.js" integrity="sha384-ZB4j+Y4rqTlON+loxr/YKq9WV8qBuZOqKukqmQVgcZ0GFy93B7TMCSezcrRkfJF5" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/i18next-http-backend@2.6.2/i18nextHttpBackend.min.js" integrity="sha384-WlaJRQMbzrA3QRfGKaedoEsPN/23lW+GV1gIyeUHkbO8EZ+R8/z7Esg7z3XAxdxH" crossorigin="anonymous"></script>
+    <script src="scripts.js?v=20260403" crossorigin="anonymous"></script>
 </body>
 </html>
 
